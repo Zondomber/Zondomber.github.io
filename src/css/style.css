@@ -1,0 +1,850 @@
+body{
+	font-family:Arial, sans-serif;
+}
+
+.lineob{
+  border: 2px solid #d17700;
+  width: 75px;
+  margin-left: 48%;
+margin-top: 30px;
+}
+
+.linegw{
+	border: 1px solid #d1d1d1;
+  margin-left: 30%;
+	margin-top:30px; 
+	margin-bottom: 20px;
+	width: 39.5%
+}
+
+ /*Сверху частоиспользуемые и основные при разработке сайта аспекты lineob line orange baby это оранджевая линия, а linegw серая line grey width*/ 
+
+
+
+
+
+
+
+
+
+ /* Список сверху Андрей Браун   ОБО МНЕ  УСЛУГИ   КЕЙСЫ   ПРАЙЗ   ОТЗЫВЫ   КОНТАКТЫ*/ 
+
+.spisoc{
+	width: 100%;
+	height: 60px;
+	background-color: #344051;
+	color: white;
+	font-weight: 700;
+}
+
+.logo{
+	font-size: 28px;
+	line-height: 60px;
+	padding-left: 15%;
+	float: left;
+}
+
+.menu{
+	float: left;
+	padding-left: 30%;
+}
+
+.menu li{
+	float: left;
+	line-height: 60px;
+	margin-right: 40px;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Титульник Привет Я Андрей Браун включая кнопки Обо мне и Мои работы */ 
+
+.main{
+	display: block;
+	width: 100%;
+	height: 1028px;
+	background-image: url(../img/2background.jpg);
+	background-repeat: no-repeat;
+}
+
+.title__container{
+	float: left;
+	margin-left:20%;
+	margin-top: 460px;
+	text-align: center;
+	
+}
+
+.title__container h1{
+	color: #2c384a;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.title__container h4{
+	color: #79818c;
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+.title__container input{
+	border: 1px solid #6d7682;
+	margin-top: 40px;
+	margin-left: 10px;
+	font-size: 20px;
+	padding: 7px 15px 7px 15px;
+	border-radius: 5px; 
+	color: #6d7682;
+	font-weight: 700;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Включает блок Обо мне до кнопки скачать резюме*/ 
+
+.obomne{
+	text-align:center;
+	padding-top: 100px;
+	font-size: 30px;
+	color: #263244;
+	font-weight: 1000;
+}
+
+.obomne img{
+	margin-top: 70px;
+	width: 200px;
+	height: 200px;
+}
+
+.info{
+	margin-top: 30px;
+	font-size: 15px;
+	margin-left: 33%;
+	color: #3f495a;
+}
+
+.download{
+	border: 1px solid #6d7682;
+	border-radius: 5px; 
+	color: #6d7682;
+	margin-left: 47%;
+	margin-top:30px;
+	padding: 5px 10px 5px 10px;
+	font-size: 12px;
+	background-color: white;
+	font-weight: 600;
+	margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Фон что я могу с информацией */ 
+
+.fonctoiamogy{
+	display: block;
+	background-image: url(../img/HowMeMogu.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 345px;
+	margin-top: 20px;
+	text-align:center;
+}
+
+.ctoiamogy{
+	text-align:center;
+	padding-top: 100px;
+	font-size: 30px;
+	color: #263244;
+}
+
+.fonctoiamogy img{
+	width: calc(100%-40px);
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+.Web_Styling{
+	float: left;
+	padding-left: 20%;
+	padding-top: 100px
+}
+
+.Web_Styling p{
+	font-size: 14px;
+	color: #3f495a;
+}
+
+.Web_Styling h4{
+	font-size: 17px;
+	color: #cf7600;
+	font-weight: 600;
+	margin-top:15px; 
+}
+
+.Working{
+	float: left;
+	padding-left: 80px;
+	padding-top: 100px
+}
+
+.Working p{
+	font-size: 14px;
+	color: #3f495a;
+}
+
+.Working h4{
+   font-size: 17px;
+	color: #cf7600;
+	font-weight: 600;
+	margin-top:15px; 
+}
+
+.CEO_Optimization{
+	float: left;
+	padding-left: 80px;
+	padding-top: 100px
+}
+
+.CEO_Optimization p{
+	font-size: 14px;
+	color: #3f495a;
+}
+
+.CEO_Optimization h4{
+   font-size: 17px;
+	color: #cf7600;
+	font-weight: 600;
+	margin-top:15px; 
+}
+
+.Marketing{
+	float: left;
+	padding-left: 80px;
+	padding-top: 100px
+}
+
+.Marketing p{
+	font-size: 14px;
+	color: #3f495a;
+}
+
+.Marketing h4{
+	font-size: 17px;
+	color: #cf7600;
+	font-weight: 600;
+	margin-top:15px; 
+}
+
+ /* Я сам в шоке от количества кода*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*Кейс с Сайтами... но там только статичная картинка...*/ 
+
+
+.ceis{
+	margin-top: 120px;
+	text-align:center;
+	font-size:30px;
+	color: #384354;
+	font-weight: bolder;
+}
+
+.textceis{
+	text-align:center;
+	margin-top: 40px;
+	color: #3f495a;
+}
+
+.cartinkasmena{
+  text-align:center;
+	margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* После сайтов снизу включает Клиент Вебсайт Название проекта и кнопка посетить сайт */ 
+
+.Clientceis{
+	float: left;
+	margin-left: 19.5%;
+}
+
+.Clientceis p{
+	margin-top: 10px;
+	color: #3f495a;
+}
+
+.Webceis{
+	float: left;
+	margin-left: 19.5%;
+}
+
+.Webceis p{
+	margin-top: 10px;
+	color: #3f495a;
+}
+
+.nameceis{
+	margin-left: 30%;
+}
+
+.nameceis p{
+	margin-top: 5px;
+	color: #3f495a;
+}
+
+.CaisBackGround h4{
+    font-size: 20px;
+	font-weight: 600;
+	color: #384354;
+}
+
+.CaisBackGround h4{
+    font-size: 20px;
+}
+
+.CaisBackGround{
+	display: block;
+	margin-top: 20px;
+}
+
+.sitevisitceis{
+	margin-top: 65px;
+	margin-left: 19.5%;
+	border: 1px solid #63b5ae;
+	border-radius: 3px;
+	display: block;
+	width: 150px;
+	padding-top: 2px ;
+	padding-bottom:2px ;
+	text-align: center;
+   background-color: #63b5ae;
+}
+
+.textsiteceis{
+	background-color: #63b5ae;
+	font-size: 13px;
+	padding-top:6px; 
+	padding-bottom:6px; 
+	font-weight: bold;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Включает в себя Расчёт стоимости до информации Сроков и Стоимости */ 
+
+.RascetName{
+	margin-top: 150px;
+	margin-bottom: 45px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #1c2534;
+	
+}
+
+.racshet{
+	margin-left: 30%;
+	display: block;
+	margin-top: 10px;
+}
+
+
+.List1OP12{
+	text-align: center;
+}
+
+.racshet h3{
+	
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #1c2534;
+}
+
+.racshet select{
+	width: 750px;
+	height: 40px;
+	background: #eeeeee;
+	border: 1px solid #eeeeee;
+	border-radius: 2px;
+	color: #737373;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+.racshet option{
+	color: #737373;
+}
+
+.itog{
+	margin-left: 30%;
+	font-weight: bold;
+	color: #1c2534;
+	font-size: 16px;
+	margin-bottom: 150px;
+}
+
+.itognumber{
+	float: right;
+	margin-right: 45%;
+	font-size: 20px;
+	color: #1c2534;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*Немного Статистики с информацией....*/ 
+
+.fonestatistic{
+	background-image: url(../img/fonestatistic.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 335px;
+	margin-top: 30px;
+	text-align:center;
+	display: block;
+}
+
+.statistic{
+	padding-top: 100px;
+	font-size: 30px;
+	color: #323d4f;
+	text-transform: uppercase;
+}
+
+.fonestatistic img{
+	width: calc(100%-40px);
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+.SmilePeople{
+	float: left;
+	padding-left: 26%;
+	padding-top: 75px
+}
+
+.SmilePeople p{
+	color: #3f495a;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.SmilePeople h3{
+	font-size: 30px;
+	color: #323d4f;
+	font-weight: bold;
+	margin-top:5px;
+	margin-bottom: 20px;
+}
+
+.Coding{
+	float: left;
+	padding-left: 135px;
+	padding-top: 75px
+}
+
+.Coding p{
+	color: #3f495a;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.Coding h3{
+   font-size: 30px;
+	color: #323d4f;
+	font-weight: bold;
+	margin-top:5px;
+	margin-bottom: 20px;
+}
+
+.ProjectCompleted{
+	float: left;
+	padding-left: 135px;
+	padding-top: 75px
+}
+
+.ProjectCompleted p{
+	color: #3f495a;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.ProjectCompleted h3{
+   font-size: 30px;
+	color: #323d4f;
+	font-weight: bold;
+	margin-top:5px;
+	margin-bottom: 20px; 
+}
+
+.WinWin{
+	float: left;
+	padding-left: 135px;
+	padding-top: 75px
+}
+
+.WinWin p{
+	color: #3f495a;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.WinWin h3{
+	font-size: 30px;
+	color: #323d4f;
+	font-weight: bold;
+	margin-top:5px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*Тут вот Отзывы*/ 
+
+.client{
+	margin-top: 100px;
+	text-align: center;
+}
+
+.client h2{
+	font-size: 40px;
+	color: #243042;
+}
+
+.client h4{
+	color: #243042;
+}
+
+.client img{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.mixail{
+	float: left;
+	margin-left: 840px;
+	font-weight: bold;
+}
+
+.client h3{
+	float: left;
+	margin-top: 30px;
+	color: #243042;
+}
+
+.clientvalue input{
+	margin-right: 20px;
+}
+
+.clientvalue{
+	margin-top: 80px;
+	text-align: center;
+	color: orange;
+	margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Тут Контакт*/
+
+.contactfone{
+	background-image: url(../img/fonecontact.jpg);
+	background-repeat: no-repeat;
+	height: 808px;
+	color: white;
+}
+
+.contact{
+	text-align: center;
+	padding-top: 100px;
+}
+
+.contact h2{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.contact h3{
+	padding-top: 30px;
+	font-size: 13px;
+}
+
+.contactfone img{
+	width: calc(100%-25px);
+	height: 25px;
+	margin-bottom: 20px;
+	margin-left: 40%;
+}
+
+.MyMapping{
+	float: left;
+	padding-left: 31.5%;
+	padding-top: 75px
+}
+
+.MyMapping p{
+	padding-top: 5px
+}
+
+.MyMapping h3{
+	margin-left: 7px;
+}
+
+.Emailing{
+	float: left;
+	padding-left: 136px;
+	padding-top: 75px
+}
+
+
+.telephone{
+	float: left;
+	padding-left: 136px;
+	padding-top: 75px
+}
+
+.soobjenie{
+	text-align: center;
+	padding-top: 200px;
+}
+
+.soobjenie h3{
+	font-size: 20px;
+	padding-bottom: 50px;
+}
+
+.namesoobjenie {
+	float: left;
+	padding-left: 30.9%;
+	
+}
+
+.namesoobjenie input{
+	width: 350px;
+	height: 30px;
+	background: rgba(255, 255, 255, 0.8);
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.Emailsoobjenie {
+	float: left;
+	padding-left: 27px;
+	
+}
+
+.Emailsoobjenie input{
+	width: 350px;
+	height: 30px;
+	background: rgba(255, 255, 255, 0.8);
+	padding-left: 10px;
+	font-weight: bold;
+}
+   
+
+.SMSsoobjenie input{
+	width: 727px;
+	height: 90px;
+	background: rgba(255, 255, 255, 0.8);
+	padding-left: 10px;
+	font-weight: bold;
+	padding-bottom: 60px;
+}
+
+
+.Givesoobjenie{
+	padding-top: 20px;
+}
+
+
+.Givesoobjenie input{
+	width: 110px;
+	height: 40px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0);
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Тут несуществующая карта*/
+
+.world{
+	border: 10px solid black;
+	width: 100%;
+	height: 350px;
+}
+
+.world h3{
+	border: 1px solid black;
+	width: 200px;
+	height: 50px;
+	margin-top: 140px;
+	margin-left: 45%;
+	text-align: center;
+	padding-top: 17px;
+	background: black;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/*А тут уже конечный блок... Copyright © 2021 Андрей Браун. Design by Web*/
+
+.end{
+	border: 1px solid #354051;
+	background: #354051;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	color: white;
+	padding-top: 25px;
+}
