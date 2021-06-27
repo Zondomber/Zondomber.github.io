@@ -362,12 +362,14 @@ margin-top: 30px;
 }
 
 .nameceis{
-	margin-left: 30%;
+	margin-left: 32%;
 }
 
 .nameceis p{
 	margin-top: 5px;
 	color: #3f495a;
+	word-spacing: 3px;
+	font-size: 17px;
 }
 
 .CaisBackGround h4{
