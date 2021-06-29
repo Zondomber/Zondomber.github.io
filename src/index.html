@@ -16,21 +16,35 @@
        <nav class="spisoc">
            <div class="logo">Андрей Браун</div>
            <div class="menu"><ul>
-               <li>Обо мне</li>
-               <li>Услуги</li>
-               <li>Кейсы</li>
-               <li>Прайз</li>
-               <li>Отзывы</li>
-               <li>Контакты</li>
+               <li><a href="">Обо мне</a></li>
+               <li><a href="">Услуги</a></li>
+               <li><a href="">Кейсы</a></li>
+               <li><a href="">Прайз</a></li>
+               <li><a href="">Отзывы</a></li>
+               <li><a href="">Контакты</a></li>
            </ul></div>
        </nav>
    </header>
-   <div class="main"><div class="title__container">
+   <main>
+   
+   
+   
+   
+   
+   
+   <section class="main"><div class="title__container">
        <h1>Привет <br> Я Андрей Браун</h1>
        <h4>Фулл стек веб-разработчик</h4>
-       <input type="submit" value="Обо мне">
-       <input type="submit" value="Мои работы">
-   </div></div>
+       <input type="button" value="Обо мне">
+       <input type="button" value="Мои работы">
+   </div></section> <!-- Титульник.. с Андреем Брауном и Кнопками Обо Мне и Мои Работы -->
+   
+   
+   
+   
+   
+   
+   <section>
    <div class="obomne"><h4>ОБО МНЕ</h4>
    <div class="lineob"></div>
    <img src="img/fotca.png" alt="Изображение"></div>
@@ -44,38 +58,55 @@
        <form action="downloaded">
           <button class="download">
           <img src="img/downloadbutton.png" alt="Изображение">
+          <img class="imgactive" src="img/downloadbuttonhover.png" alt="">
            Скачать резюме </button>
        </form>
+   </section>  <!-- Тут Обо Мне, Фотка и Скачать Резюме -->
+   
+   
+   
+   
+   
+   
+   <section>
 <div class="fonctoiamogy">
    <div class="ctoiamogy"><h2>ЧТО Я УМЕЮ?</h2></div> 
    <div class="lineob"></div>
        <div class="Web_Styling">
-    <img src="img/nout.png" alt="Изображение" >
+    <img class="nout" src="img/nout.png" alt="Изображение" >
     <h4> Веб-дизайн </h4>
     <br>
     <p>Lorem ipsum dolor sit amet placerat <br>facilisis felis mi in tempus eleifend <br>
 	pellentesque natoque etiam. </p>
     </div>
     <div class="Working">
-    <img src="img/znak.png" alt="Изображение" >
+    <img class="znak" src="img/znak.png" alt="Изображение" >
     <h4> Разработка </h4>
     <br>
     <p>Lorem ipsum dolor sit amet placerat <br> facilisis mi in tempus eleifend <br>
 	pellentesque.</p>
     </div>
     <div class="CEO_Optimization">
-    	<img src="img/raketa.png" alt="Изображение" >
+    	<img class="raketa" src="img/raketa.png" alt="Изображение" >
     	<h4> CEO-Оптимизация </h4>
     	<br>
     	<p>Lorem ipsum dolor sit amet placerat <br> facilisis felis mi in tempus eleifend <br>pellentesque natoque etiam.</p>
     </div>
     <div class="Marketing">
-    	<img src="img/gramofon.png" alt="Изображение" >
+    	<img class="gramofon" src="img/gramofon.png" alt="Изображение" >
     	<h4> Маркетинг </h4>
     	<br>
     	<p>Lorem ipsum dolor sit amet placerat <br> facilisis felis mi in tempus eleifend <br>pellentesque natoque .</p>
     </div>
   </div>
+   </section> <!-- Что я умею и перечисление Веб-Дизайн Разработка  CEO-Оптимизация и Маркетинг-->
+   
+   
+   
+   
+   
+   
+   <section>
     <div class="ceis">
         <h2>KЕЙСЫ</h2>
     </div>
@@ -109,30 +140,34 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
     <button><div class="textsiteceis">VISIT LIVE SITE</div></button>
     </div>
     </form>
+  </section> <!-- Кейсы и включает ещё в себя Клиента Вебсайт Название проэкта и Посетить живой сайт-->
+    
+    
+    
+    
+    
+    
+   <section>
     <form action="Rascetstoimosti">
        <div class="RascetName">Расчёт стоимости</div>
         <ul>
            <div class="racshet">
            <li>
            <h3>ТИП САЙТА</h3>
+           <li>
            <select name="list1" id="list1">
-              <div class="StartList1C">
-               <option value="StartList1">Выберите пункт...</option>
-               </div>
+               <option value="42.1" disabled selected hidden>Выберите пункт...</option>
                <option value="List1OP1">1</option>
                <option value="List1OP2">2</option>
                <option value="List1OP3">3</option>
            </select>
            </li>
-           </div>
+			</div>
            <div class="racshet">
            <li>
            <h3>ДИЗАЙН</h3>
            <select name="list1" id="list1" required>
-          	   <div class="StartList2">
-           	   <option value="StartList2">Выберите пункт...</option>
-           	   </div>
-           	   
+           	   <option value="42.2" disabled selected hidden>Выберите пункт...</option>
 			   <option value="List2OP1">1</option>
 			   <option value="List3OP2">2</option>
 			   <option value="List4OP3">3</option>
@@ -144,11 +179,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
            <li>
            <h3>АДАПТИВНОСТЬ</h3>
            <select name="list1" id="list1">
-              
-              <div class="StartList3C">
-               <option value="StartList3">Выберите пункт...</option>
-               </div>
-               
+              <option value="42.3" disabled selected hidden>Выберите пункт...</option>
                <option value="List3OP1">1</option>
                <option value="List3OP2">2</option>
                <option value="List3OP3">3</option>
@@ -163,7 +194,15 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 			<br>
 			Стоимость <div class="itognumber"> 0</div>
         </div>
-    </form> 
+    </form>
+    </section>  <!-- Расчёт стоимости Тип сайта Дизайн Адаптивность Сроки и Стоимость-->
+    
+    
+    
+    
+    
+    
+    <section>
     <div class="fonestatistic">
     <div class="statistic"><h2>Немного статистики</h2></div>
     <div class="lineob"></div>
@@ -187,7 +226,16 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
     <h3> 23 </h3>
     <p>НАГРАД ПОЛУЧЕНО</p>
     </div>
-    </div>                      
+    </div> 
+    </section> <!-- Немного Статистики Счасливые Клиенты Часов Работы Проэктов Завершено и Наград получено-->
+    
+
+
+
+
+              
+
+    <section class="clienture">                            
     <div class="client">
             <h2>Отзывы</h2>
             <div class="lineob"></div>
@@ -196,14 +244,26 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
             <h3><div class="mixail">Михаил</div>, Ген директор ПАО “Газпром”.</h3>
     </div>
      <div class="clientvalue">
-     	
-     	<form action="clientgood">
-            	<input type="radio" name="BestComment" value="0">
+           		
+           		
+           		<input type="radio" name="BestComment" value="0" checked>
+           		
             	<input type="radio" name="BestComment" value="1">
+            	
             	<input type="radio" name="BestComment" value="2">
-        </form>
-     	
+            	
+           		
+           	
+
      </div>
+     </section> <!-- Тут Отзывы Михаил и т.д.-->
+     
+     
+     
+     
+     
+     
+     <section>
     <div class="contactfone">	
     	<div class="contact"><h2>МОИ КОНТАКТЫ</h2>
        <div class="lineob"></div>
@@ -236,18 +296,29 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
         </div>
     	
     </div> 
+    </section> <!-- Мои контакты Местоположение Майл.Ру Телефон И Оставте мне сообщение с Именем Емайлом Сообщение и с кнопкой Отправить-->
       
+      
+      
+      
+      
+      
+      
+    <section>
     <div class="world">
     	
 		<h3>Тут должна быть карта</h3>
+   	    <h4>Но её нет мухахахах!!!</h4>
     	
-    </div>   
-        
-        
-        
-        
-        
-        
+    </div> 
+    </section> <!-- Тут должна быть карта... но её пока нет....-->
+    
+    
+    
+         
+       
+      
+    </main>         
     <footer>
         <div class="end">Copyright © 2021 Андрей Браун. Design by Web</div>
        </footer>

@@ -27,6 +27,75 @@ margin-top: 30px;
 
 
 
+
+ /*   <Анимации>   */
+
+@keyframes comming{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes down{
+	0%{
+		opacity: 0;
+		margin-top: -80px;
+	}
+	
+	100%{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+
+@keyframes menuanim{
+	0%{
+		opacity: 0;
+		margin-left: -700px;
+	}
+	
+	100%{
+		opacity: 1;
+		margin-left: 20%;
+	}
+}
+
+@keyframes volna{
+	0%{
+		margin-top: 0px;
+	}
+	
+	50%{
+		margin-top: -5px;
+	}
+	
+	100%{
+		margin-top: 0px; 
+	}
+}
+
+
+
+
+
+
+
+
+ /*   </Анимации>   */ 
+
+
+
+
+
+
+
+
+
+
  /* Список сверху Андрей Браун   ОБО МНЕ  УСЛУГИ   КЕЙСЫ   ПРАЙЗ   ОТЗЫВЫ   КОНТАКТЫ*/ 
 
 .spisoc{
@@ -35,6 +104,8 @@ margin-top: 30px;
 	background-color: #344051;
 	color: white;
 	font-weight: 700;
+	position: fixed;
+	z-index: 2;
 }
 
 .logo{
@@ -42,6 +113,9 @@ margin-top: 30px;
 	line-height: 60px;
 	padding-left: 15%;
 	float: left;
+	-webkit-animation: comming 2s;
+	-o-animation: comming 2s;
+	animation: comming 2s;
 }
 
 .menu{
@@ -55,8 +129,52 @@ margin-top: 30px;
 	margin-right: 40px;
 	font-size: 17px;
 	text-transform: uppercase;
+	-webkit-animation: down 0.4s forwards;
+	-o-animation: down 0.4s forwards;
+	animation: down 0.4s forwards;
+	opacity: 0;
 }
 
+
+.menu li a{
+	transition: all 0.25s;
+	color:white;
+	transform: scale(1);
+	display: inline-block;
+}
+
+.menu li a:visited{
+	color: white;
+}
+
+
+.menu li a:hover{
+	color: #ff9100;
+}
+
+.menu li a:active{
+	transform: scale(1.2);
+}
+
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+	animation-delay: 2s;
+}
 
 
 
@@ -83,6 +201,9 @@ margin-top: 30px;
 }
 
 .title__container{
+	-webkit-animation: menuanim 6s forwards;
+	-o-animation: menuanim 6s forwards;
+	animation: menuanim 6s forwards;
 	float: left;
 	margin-left:20%;
 	margin-top: 460px;
@@ -112,6 +233,22 @@ margin-top: 30px;
 	color: #6d7682;
 	font-weight: 700;
 	
+}
+
+.title__container input{
+	transition: all 0.3s;
+	transform: scale(1);
+}
+
+.title__container input:hover{
+	background:#6d7682;
+	border: 1px solid white;
+	color: white;
+	transform: scale(1.1);
+}
+
+.title__container input:active{
+	transform: scale(1.2);
 }
 
 
@@ -148,6 +285,13 @@ margin-top: 30px;
 	height: 200px;
 }
 
+.imgactive{
+	position: fixed;
+	left: 10px;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
 .info{
 	margin-top: 30px;
 	font-size: 15px;
@@ -166,6 +310,18 @@ margin-top: 30px;
 	background-color: white;
 	font-weight: 600;
 	margin-bottom: 70px;
+	transition: all 0.3s;
+	transform: scale(1);
+}
+
+.download:hover{
+	transform: scale(1.1);
+	color:white;
+	background:#6d7682;
+}
+
+.download:hover .imgactive{
+	opacity: 1;
 }
 
 
@@ -207,17 +363,22 @@ margin-top: 30px;
 	width: calc(100%-40px);
 	height: 40px;
 	margin-bottom: 20px;
+	-webkit-animation: volna 2s infinite;
+	-o-animation: volna 2s infinite;
+	animation: volna 2s infinite;
 }
 
 .Web_Styling{
 	float: left;
 	padding-left: 20%;
-	padding-top: 100px
+	padding-top: 100px;
+	
 }
 
 .Web_Styling p{
 	font-size: 14px;
 	color: #3f495a;
+	
 }
 
 .Web_Styling h4{
@@ -226,6 +387,12 @@ margin-top: 30px;
 	font-weight: 600;
 	margin-top:15px; 
 }
+
+
+.Web_Styling img{
+	animation-delay: 0.5s;
+}
+
 
 .Working{
 	float: left;
@@ -245,6 +412,12 @@ margin-top: 30px;
 	margin-top:15px; 
 }
 
+
+.Working img{
+	animation-delay: 1s;
+}
+
+
 .CEO_Optimization{
 	float: left;
 	padding-left: 80px;
@@ -263,6 +436,12 @@ margin-top: 30px;
 	margin-top:15px; 
 }
 
+
+.CEO_Optimization img{
+	animation-delay: 1.5s;
+}
+
+
 .Marketing{
 	float: left;
 	padding-left: 80px;
@@ -279,6 +458,9 @@ margin-top: 30px;
 	color: #cf7600;
 	font-weight: 600;
 	margin-top:15px; 
+}
+.Marketing img{
+	animation-delay: 2s;
 }
 
  /* Я сам в шоке от количества кода*/ 
@@ -398,6 +580,7 @@ margin-top: 30px;
 	padding-bottom:2px ;
 	text-align: center;
    background-color: #63b5ae;
+	transition: all 0.3s;
 }
 
 .textsiteceis{
@@ -407,6 +590,18 @@ margin-top: 30px;
 	padding-bottom:6px; 
 	font-weight: bold;
 	color:white;
+	transition: all 0.3s;
+	transform: scale(1);
+}
+
+.sitevisitceis:hover{
+ 	transform: scale(1.1);
+	background: #539892;
+}
+
+.sitevisitceis:hover .textsiteceis{
+	background: #539892;
+	color: #cecece;
 }
 
 
@@ -523,12 +718,19 @@ margin-top: 30px;
 	width: calc(100%-40px);
 	height: 40px;
 	margin-bottom: 20px;
+	-webkit-animation: volna 2s infinite;
+	-o-animation: volna 2s infinite;
+	animation: volna 2s infinite;
 }
 
 .SmilePeople{
 	float: left;
 	padding-left: 26%;
 	padding-top: 75px
+}
+
+.SmilePeople img{
+	animation-delay: 2s;
 }
 
 .SmilePeople p{
@@ -549,6 +751,10 @@ margin-top: 30px;
 	float: left;
 	padding-left: 135px;
 	padding-top: 75px
+}
+
+.Coding img{
+	animation-delay: 1.5s;
 }
 
 .Coding p{
@@ -585,6 +791,10 @@ margin-top: 30px;
 	margin-bottom: 20px; 
 }
 
+.ProjectCompleted img{
+	animation-delay: 1s;
+}
+
 .WinWin{
 	float: left;
 	padding-left: 135px;
@@ -603,6 +813,10 @@ margin-top: 30px;
 	font-weight: bold;
 	margin-top:5px;
 	margin-bottom: 20px;
+}
+
+.WinWin img{
+	animation-delay: 0.5s;
 }
 
 
@@ -661,6 +875,32 @@ margin-top: 30px;
 	text-align: center;
 	color: orange;
 	margin-bottom: 100px;
+}
+
+.clienture input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+
+  background: #cfd2d7;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+.clienture input:checked {
+  background: #c96500;
+}
+
+.clientvalue input{
+	margin-left: 10px;
 }
 
 
@@ -796,6 +1036,19 @@ margin-top: 30px;
 	color: white;
 	font-size: 15px;
 	font-weight: bold;
+	transition: all 0.3s;
+	transform: scale(1);
+}
+
+.Givesoobjenie input:hover{
+	background: rgb(255, 255, 255);
+	color: black;
+
+}
+
+.Givesoobjenie input:active{
+	transform: scale(1.1);
+
 }
 
 
@@ -817,6 +1070,21 @@ margin-top: 30px;
 	height: 350px;
 }
 
+.world h4{
+	position: relative;
+	left: 847px;
+	bottom: 50px;
+	color: white;
+	border: 1px solid black;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	padding-top: 17px;
+	font-size: 16px;
+	font-weight: bold;
+	opacity: 0
+}
+
 .world h3{
 	border: 1px solid black;
 	width: 200px;
@@ -829,6 +1097,38 @@ margin-top: 30px;
 	color: white;
 	font-size: 16px;
 	font-weight: bold;
+	opacity: 1
+}
+
+.world:hover h4{
+	position: relative;
+	left: 847px;
+	bottom: 50px;
+	color: white;
+	border: 1px solid black;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	padding-top: 17px;
+	font-size: 16px;
+	font-weight: bold;
+	background: black;
+	opacity: 1
+}
+
+.world:hover h3{
+	position: relative;
+	left: 847px;
+	bottom: 50px;
+	color: white;
+	border: 1px solid black;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	padding-top: 17px;
+	font-size: 16px;
+	font-weight: bold;
+	opacity: 0
 }
 
 
