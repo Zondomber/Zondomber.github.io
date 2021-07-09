@@ -1225,14 +1225,15 @@ float: left;
 	}
 
 .Dannoclienture{
-	position: relative;
-	margin-top: -100px;
+	margin-bottom: 250px;
+	margin-top: 400px;
 }
 
 
 .DannoDanno{
 	position: relative;
 	margin-bottom: 250px;
+	
 }
 
 
@@ -1388,13 +1389,13 @@ float: left;
 }
 	
 	.DannoNavuki2{
-	top: -620px;
+	margin-top: -620px;
 }
+	
 	
 	.Dannoclienture{
-	bottom: 940px;
+	margin-top: 200px;
 }
-	
 	
 	
 	
@@ -1731,6 +1732,7 @@ font-size: 14px;
 }
 	
 	
+
 	
 	
 	
@@ -1917,8 +1919,14 @@ font-size: 14px;
 		top: -120px;
 	}
 	
+	.DannoNavuki2{
+		margin-top: 50px;
+	}
 	
-	
+	.Dannoclienture{
+	margin-top: 350px;
+		margin-bottom: -100px;
+}
 	
 	
 	.namesoobjenie input{
@@ -2081,9 +2089,7 @@ font-size: 14px;
 	
 	
 	
-	.Dannoclienture{
-	bottom: 600px;
-}
+	
 	
 	.DannoMe{
 		top: -100px;
