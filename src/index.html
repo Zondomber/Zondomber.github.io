@@ -6,7 +6,7 @@
     <meta name = "author" content = "Zondomber">
     <meta name="robots" content="noindex, nofollow">
     <meta property="og:title" content="Это моя страница!">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Андрей Браун - Веб-Разработчик</title>
     
@@ -140,9 +140,8 @@
    <div class="col-4"></div>
    </div>
    
-    <div class="row align-items-center">
-    <div class="col-lg-5 col-4"></div>
-    <div class="col-7 mb-4">
+    <div class="row justify-content-center">
+    <div class="col-12 text-center">
    <img src="img/fotca.png" alt="Изображение">
    </div>
    </div>
@@ -150,14 +149,21 @@
    
    
    
-   <div class="row align-items-center">
-   <div class="col-3"></div>
-   <div class="col-9">
-   <div class="info">
+   <div class="row">
+   <div class="col-12 mt-4">
+   <div class="info infi d-flex justify-content-center">
        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita debitis voluptatibus explicabo minima <br> quos laborum, vero, sint corporis labore unde.
-       <br>
-       <br>
-       <br>
+      
+       </div>
+   </div>
+     </div> 
+       
+       
+     
+        <div class="row">
+   <div class="col-12 mt-4">
+   <div class="info d-flex justify-content-center">  
+       
        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus et modi consequatur distinctio quidem. <br> Rerum vitae nulla ducimus quaerat deserunt.
    </div>
    </div>
@@ -165,14 +171,10 @@
   
    <div class="row">
    	
-   	<div class="col-6"></div>
-   	
-   	<div class="col-6 linkOboMny">
+   	<div class="col-12 linkOboMny text-center">
    		
    		
 		<button type="button" class="btn btn-outline-secondary download fw-bold MoiRabota2"> <img src="img/downloadbutton.png" alt=""> <img src="img/downloadbuttonhover.png" class="imgactive" alt=""> Скачать резюме</button>
-  		
-   		
    	</div>
    	
    </div>
@@ -280,11 +282,10 @@
   
    
    
+   
+   
    <section class="DannoCeis">
    <div class="container">
-   
-   
-   
    
    
    
@@ -310,16 +311,6 @@
 		</div>
        </div>
        
-       
-       
-       
-       
-       
-       
-      
-       
-       
-       
        <div class="row DanText">
    <div class="col-12">
         <form action="progapovorota">
@@ -332,16 +323,20 @@
     <h4> CLIENT: </h4>
     <p>Какая-то компания</p>
     </div>
-    <div class="nameceis">
-    <h4> Название проекта </h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
     <div class="Webceis">
     <h4> WEBSITE: </h4>
     <p>https://какой-то_сайт</p>
     </div>
+    <br>
+    <br>
+   
+    <div class="nameceis">
+    <h4> Название <div class="hus">проекта</div></h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    
     </div>
     <br><br>
     <br><br>    
@@ -354,8 +349,13 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
   </section> <!-- Кейсы и включает ещё в себя Клиента Вебсайт Название проэкта и Посетить живой сайт-->
     
    
+   
+   
+   
+   
+   
     
-  <section class="DannoRascet">
+    <section class="DannoRascet">
    <div class="container">
    <div class="DannoRasset mx-auto">
     <form class="Rascetstoimostic" action="Rascetstoimosti">
@@ -371,20 +371,21 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
            <li>
            <select name="list1" id="list1">
                <option value="42.1" disabled selected hidden>Выберите пункт...</option>
-               <option value="List1OP1">1</option>
-               <option value="List1OP2">2</option>
-               <option value="List1OP3">3</option>
+               <option value="1">Одностраничный сайт</option>
+               <option value="2">Сайт-визитка</option>
+               <option value="3">Корпоративные сайты</option>
+               <option value="4">Промо-сайты</option>
            </select>
            </li>
 			</div>
            <div class="racshet">
            <li>
            <p>ДИЗАЙН</p>
-           <select name="list1" id="list1" required>
+           <select name="list2" id="list2" required>
            	   <option value="42.2" disabled selected hidden>Выберите пункт...</option>
-			   <option value="List2OP1">1</option>
-			   <option value="List3OP2">2</option>
-			   <option value="List4OP3">3</option>
+			   <option value="1">Свой</option>
+			   <option value="2">Чужой</option>
+			   <option value="L3">Не мой</option>
            </select>
            </li>
            </div> 
@@ -392,11 +393,11 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
            <div class="racshet2">  
            <li>
            <p>АДАПТИВНОСТЬ</p>
-           <select name="list1" id="list1">
+           <select name="list3" id="list3">
               <option value="42.3" disabled selected hidden>Выберите пункт...</option>
-               <option value="List3OP1">1</option>
-               <option value="List3OP2">2</option>
-               <option value="List3OP3">3</option>
+               <option value="1">Под Компьютеры</option>
+               <option value="2">Под Мобилки</option>
+               <option value="3">И то и другое</option>
            </select>
            </li> 
            </div>
@@ -439,10 +440,12 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
  
  
  
+ 
+ 
    <section class="DannoNavuki2">
    <div class="ctoimma2"></div>
    <div class="container">
-<div class="fonctoiamogy">
+<div class="fonctoiamogy2">
    <div class="ctoiamogy">НЕМНОГО СТАТИСТИКИ</div> 
    <div class="row">
    <div class="col-4"></div>
@@ -453,7 +456,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
    <div class="col-4"></div>
    </div>
      
-      <div class="row text-center mesto1">
+      <div class="row text-center mesto2">
       <div class="col-lg-12 col-md-9 col-12">
       
        <div class="Web_Styling LEFTMesto2">
@@ -557,7 +560,6 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
      
      
      <section class="DannoDanno">
-     
      <div class="container">
      
      
@@ -578,7 +580,8 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 			</div>
         
         
-        
+           
+
         <div class="row">
         <div class="col-3"></div>     
      	<div class="col-9 text-center">
@@ -634,11 +637,16 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
     
     
     
-    </div>
-    </div>
     
+    
+    
+    </div>
+    </div>
+     
+     
+     <img src="img/fonecontact.jpg" class=" ctoimma3" alt="...">
       <img src="img/fonecontact.jpg" class="img-fluid BackMain3" alt="...">
-
+		
     </section> <!-- Мои контакты Местоположение Майл.Ру Телефон И Оставте мне сообщение с Именем Емайлом Сообщение и с кнопкой Отправить-->
 
       
@@ -660,9 +668,10 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
        
       
     </main>
-	</div>         
+	</div>
     <footer class="end">
         <div>Copyright © 2021 Андрей Браун. Design by Web</div>
        </footer>
+       <script src="js/script.js"></script>
 </body>
 </html>
