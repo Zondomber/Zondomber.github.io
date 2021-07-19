@@ -1,5 +1,39 @@
+/*HitBOX*//*HitBOX*//*HitBOX*//*HitBOX*
+
+body section{
+	border: 1px solid #00ff40;
+}
+
+/*HitBOX*//*HitBOX*//*HitBOX*//*HitBOX*/
+
+
+
+/*Доп Элементы*//*Доп Элементы*//*Доп Элементы*//*Доп Элементы*//*Доп Элементы*/
+
+.line-op{
+	background-color: #d87003;
+	width: 70px;
+	height: 5px;
+}
+
+.text-color{
+	color: #38475a;
+}
+
+
+
+
+
+/*Доп Элементы*//*Доп Элементы*//*Доп Элементы*//*Доп Элементы*//*Доп Элементы*/
+
+
+
+
+
+
+
 @font-face {
-	font-family: 'Bruh';
+	font-family: 'Font-1';
 	src: url('../fonts/BAHNSCHRIFT.eot');
 	src: local('☺'), url('../fonts/BAHNSCHRIFT.woff') format('woff'), url('../fonts/BAHNSCHRIFT.ttf') format('truetype'), url('../fonts/BAHNSCHRIFT.svg') format('svg');
 	font-weight: normal;
@@ -8,7 +42,7 @@
 
 
 @font-face {
-	font-family: 'Franklin';
+	font-family: 'Font-2';
 	src: url('../fonts/Franklin Gothic Medium Regular.eot');
 	src: local('☺'), url('../fonts/Franklin Gothic Medium Regular.woff') format('woff'), url('../fonts/Franklin Gothic Medium Regular.ttf') format('truetype'), url('../fonts/Franklin Gothic Medium Regular.svg') format('svg');
 	font-weight: normal;
@@ -17,37 +51,30 @@
 
 
 @font-face {
-	font-family: 'Calibri';
+	font-family: 'Font-3';
 	src: url('../fonts/calibri-regular.eot');
 	src: local('☺'), url('../fonts/calibri-regular.woff') format('woff'), url('../fonts/calibri-regular.ttf') format('truetype'), url('../fonts/calibri-regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-body{
-	overflow-x: hidden;
-}
 
-.lineob{
-  border: 2px solid #d17700;
-  width: 75px;
-	
-}
 
-.linegw{
-	border: 1px solid #d1d1d1;
-	width: 100%;
-}
 
-.a{
-	
-	text-decoration: none;
-}
+
+
+
+
+
+
+
+
+
 
 
  /*   <Анимации>   */
 
-@keyframes comming{
+@keyframes Anim-Menu-1{
 	0%{
 		opacity: 0;
 	}
@@ -57,7 +84,19 @@ body{
 	}
 }
 
-@keyframes down{
+@keyframes Anim-Menu-2{
+	0%{
+		opacity: 0;
+		margin-top: -80px;
+	}
+	
+	100%{
+		opacity: 1;
+		margin-top: 5px;
+	}
+}
+
+@keyframes Anim-Menu-3{
 	0%{
 		opacity: 0;
 		margin-top: -80px;
@@ -69,28 +108,33 @@ body{
 	}
 }
 
-@keyframes menuanim{
+@keyframes Anim-Title{
 	0%{
+		position: relative;
 		opacity: 0;
-		margin-left: -700px;
+		right: 1000px;
 	}
 	
 	100%{
+		position: relative;
 		opacity: 1;
-		margin-left: 10%;
+		right: 0px;
 	}
 }
 
-@keyframes volna{
+@keyframes Anim-Volna{
 	0%{
+		position: relative;
 		top: 0px;
 	}
 	
 	50%{
+		position: relative;
 		top: -5px;
 	}
 	
 	100%{
+		position: relative;
 		top: 0px; 
 	}
 }
@@ -99,4114 +143,1553 @@ body{
  /*   </Анимации>   */ 
 
 
-body{
-	max-height: 5623px
+
+
+
+
+
+
+/*Меню *//*Меню *//*Меню *//*Меню *//*Меню *//*Меню *//*Меню *//*Меню *//*Меню */
+
+header{
+color: white;
+background-color: #2a3e51;
+height: 60px;
+display: block;
+position: fixed;
+z-index: 100;
+width: 100%;
 }
 
-
-.logo{
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 60px;
+header li{
 	float: left;
-	-webkit-animation: comming 2s;
-	-o-animation: comming 2s;
-	animation: comming 2s;
+	margin-right: 30px;
+	margin-top: 5px;
 }
 
-.menu{
-	float: right;
-	opacity: 1;
-}
-
-.menu li{
-	float: left;
-	line-height: 60px;
-	margin-right: 40px;
-	-webkit-animation: down 0.4s forwards;
-	-o-animation: down 0.4s forwards;
-	animation: down 0.4s forwards;
-	opacity: 0;
-}
-
-
-.menu li a{
-	
-	font-size: 15px;
-	transition: all 0.25s;
-	color:white;
-	transform: scale(1);
-	display: inline-block;
-	text-decoration: none;
-	font-weight: 600;
-}
-
-.menu li a:visited{
-	color: white;
-}
-
-
-.menu li a:hover{
-	color: #ff9100;
-}
-
-.menu li a:active{
-	transform: scale(1.2);
-}
-
-.menu li:nth-child(2){
-	animation-delay: 0.4s;
-}
-
-.menu li:nth-child(3){
-	animation-delay: 0.8s;
-}
-
-.menu li:nth-child(4){
-	animation-delay: 1.2s;
-}
-
-.menu li:nth-child(5){
-	animation-delay: 1.6s;
-}
-
-.menu li:nth-child(6){
-	animation-delay: 2s;
-}
-
-
-
-.PC_Sizes_Header{
-	opacity: 1;
-}
-
-.Telephone_Sizes_Header
-{
-	opacity: 0;
-}
-
-.logo2{
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 60px;
-	float: left;
-	-webkit-animation: comming 2s;
-	-o-animation: comming 2s;
-	animation: comming 2s;
-}
-
-
-.BackMain{
-	position: absolute;
-	top: 0px;
-	z-index: 0;
-}
-
-.main{
-	position: relative;
-	z-index: 1;
-	top: 435px;
-	float: left;
-}
-
-
-.main h1{
-	color: #223549;
-	font-size: 65px;
-}
-
-.main h4{
-	padding-bottom: 30px;
-	padding-top: 10px;
-	color: #76828e;
-}
-
-
-
-
-
-
-
-
-
-
-.menu2{
-	float: right;
-	opacity: 1;
-	margin-top: 10px;
-	width: 200px;
-}
-
-.menu2 li{
-	-webkit-animation: down 0.4s forwards;
-	-o-animation: down 0.4s forwards;
-	animation: down 0.4s forwards;
-	opacity: 0;
-}
-
-
-.menu2 li a:active{
-	transform: scale(1.2);
-}
-
-.menu2 select{
-	padding-left: 25px;
-}
-.title__container{
-	-webkit-animation: menuanim 6s forwards;
-	-o-animation: menuanim 6s forwards;
-	animation: menuanim 6s forwards;
-	float: left;
-	text-align: center;
+.Pos-MENU{
+	margin-top: 15px;
 	display: block;
-	transition: all 0.3s;
-	transform: scale(1);
-}
-
-.invisibly{
-	width: 100%;
-	margin-top: 650px;
-	color: rgba(0,0,0,0)
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* Включает блок Обо мне до кнопки скачать резюме*/ 
-
-.obomne{
-	text-align:center;
-	font-size: 30px;
-	color: #263244;
 	font-weight: 600;
 }
 
-.imgactive{
-	opacity: 0;
-	transition: all 0.3s;
-}
-
-.info{
-	font-size: 15px;
-	color: #3f495a;
-	font-weight: 400;
-}
-
-.infi{
-	position: relative;
-	left: 5px;
-}
-
-.download{
-	border: 1px solid #6d7682;
-	border-radius: 5px; 
-	color: #6d7682;
-	font-size: 13px;
-	background-color: white;
-	transition: all 0.3s;
-	transform: scale(1);
-}
-.imgactive{
-	position: fixed;
-	left: 10px;
-	top: 10px;
-}
-
-.download:hover{
-	transform: scale(1.1);
-	color:white;
-	background:#6d7682;
-}
-
-.download:hover .imgactive{
-	opacity: 1;
-}
-
-
-.OboMny{
-	position: relative;
-	top: -150px;
-}
-
-.linkOboMny{
-	position: relative;
-	top: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Фон что я могу с информацией */
-.ctoimma3{
+.Pos-Tel-MENU{
 	display: none;
 }
 
-.ctoiamogy{
-	text-align:center;
-	font-size: 30px;
-	color: #263244;
-	
-	font-weight: 600;
+.Objective-header{
+position: relative;
+	top: 0px;
+height: 60px;
+width: 100%;
 }
 
-.fonctoiamogy img{
-	position: relative;
-	height: 40px;
-	margin-bottom: 20px;
-	-webkit-animation: volna 2s infinite;
-	-o-animation: volna 2s infinite;
-	animation: volna 2s infinite;
+.Text-Menu-1{
+	-webkit-animation: Anim-Menu-1 2s forwards;
+    -o-animation: Anim-Menu-1 2s forwards;
+    animation: Anim-Menu-1 2s forwards;
 }
 
-.fonctoiamogy2 img{
-	position: relative;
-	height: 40px;
-	margin-bottom: 20px;
-	-webkit-animation: volna 2s infinite;
-	-o-animation: volna 2s infinite;
-	animation: volna 2s infinite;
+.Text-Menu-2 li{
+	-webkit-animation: Anim-Menu-2 2s forwards;
+    -o-animation: Anim-Menu-2 2s forwards;
+    animation: Anim-Menu-2 2s forwards;
+	opacity: 0;
 }
 
-.Web_Styling{
-	float: left;
-	margin-right: 50px;
+.Text-Menu-2 li:nth-child(2){
+	animation-delay: 0.4s;
 }
 
-.Web_Styling p{
-	font-size: 14px;
-	color: #3f495a;
+.Text-Menu-2 li:nth-child(3){
+	animation-delay: 0.8s;
 }
 
-.Web_Styling h4{
-	font-size: 17px;
-	color: #cf7600;
-	font-family: 'Bruh';
+.Text-Menu-2 li:nth-child(4){
+	animation-delay: 1.2s;
 }
 
-
-.Web_Styling img{
-	animation-delay: 0.5s;
+.Text-Menu-2 li:nth-child(5){
+	animation-delay: 1.6s;
 }
 
-
-.Working{
-	float: left;
-	margin-right: 50px;
-}
-
-.Working p{
-	font-size: 14px;
-	color: #3f495a;
-}
-
-.Working h4{
-   font-size: 17px;
-	color: #cf7600;
-	font-family: 'Bruh';
-}
-
-
-.Working img{
-	animation-delay: 1s;
-}
-
-
-.CEO_Optimization{
-	float: left;
-	margin-right: 50px;
-}
-
-.CEO_Optimization p{
-	font-size: 14px;
-	color: #3f495a;
-}
-
-.CEO_Optimization h4{
-   font-size: 17px;
-	color: #cf7600;
-	font-family: 'Bruh';
-}
-
-
-.CEO_Optimization img{
-	animation-delay: 1.5s;
-}
-
-
-.Marketing{
-	float: left;
-	margin-right: 50px;
-}
-
-.Marketing p{
-	font-size: 14px;
-	color: #3f495a;
-}
-
-.Marketing h4{
-	font-size: 17px;
-	color: #cf7600;
-	font-family: 'Bruh';
-}
-.Marketing img{
+.Text-Menu-2 li:nth-child(6){
 	animation-delay: 2s;
 }
 
-.mesto1{
-	display: block;
-	position: relative;
-	z-index: 1;
-	margin-left: 120px;
+.Text-Menu-3{
+	-webkit-animation: Anim-Menu-3 1s forwards;
+    -o-animation: Anim-Menu-3 1s forwards;
+    animation: Anim-Menu-3 1s forwards;
 }
 
-.mesto2{
-	display: block;
-	position: relative;
-	z-index: 1;
-	margin-left: 120px;
-}
+/*Меню *//*Меню *//*Меню *//*Меню *//*Меню *//*Меню *//*Меню *//*Меню *//*Меню */
 
-.BackMain2{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Титульник*//*Титульник*//*Титульник*//*Титульник*//*Титульник*//*Титульник*/
+
+.IMG-Stabilizator-MAIN{
 	position: absolute;
-	left: 0px;
-	top: -80px;
 	z-index: -1;
-}
- /* Я сам в шоке от количества кода*/ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.ceisf{
-	font-size: 30px;
-	font-weight: 700;
-	margin-bottom: 20px;
+	opacity: 1;
 }
 
-.Clientceis{
+.title-container{
+    -webkit-animation: Anim-Title 6s forwards;
+    -o-animation: Anim-Title 6s forwards;
+    animation: Anim-Title 6s forwards;
+}
+
+.text-m1{
+	margin-top: 400px;
+	color: #213549;
+	font-size: 60px;
+	font-weight: 650;
+}
+
+.text-m2{
+	margin-top: -5px;
+	color: #76828e;
+	font-size: 15px;
+	font-weight: 650;
+	letter-spacing: -1px;
+}
+
+.text-m1 p{
+	position: relative;
+	bottom: 10px;
+}
+
+.button-m-R button{
+	float: right;
+}
+
+.button-m-L button{
 	float: left;
 }
 
-.Clientceis p{
-	color: #3f495a;
+.button-m-box{
+	margin-right: 650px;
+	margin-top: 40px;
+	animation-duration: 1s;
+	transform: scale(1)
+}
+
+.button-m-box button{
+	border: 1px solid #4a545d;
+	font-weight: 700;
 }
 
 
+/*Титульник*//*Титульник*//*Титульник*//*Титульник*//*Титульник*//*Титульник*/
 
-.Webceis p{
-	color: #3f495a;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*/
+
+.Section-OboMne{
+	margin-top: 440px;
 }
 
-.nameceis{
-	margin-left: 150px;
-	position: relative;
-	top: -40px;
-}
-
-.nameceis h4{
-	position: relative;
-	left: -50px;
+.text-op-m1{
+	font-size: 30px;
+	font-weight: 600;
+	color: #1a2e43;
 	
 }
 
-
-.nameceis p{
-	color: #3f495a;
-	margin-left: 58px;
-	word-spacing: 3px;
-	font-size: 17px;
-}
-
-.CaisBackGround h4{
-    font-size: 20px;
-	font-weight: 600;
-	color: #384354;
-}
-
-.CaisBackGround h4{
-    font-size: 20px;
-}
-
-.CaisBackGround{
-	display: block;
-}
-
-.sitevisitceis{
-	border: 1px solid #63b5ae;
-	display: block;
-	width: 150px;
-	text-align: center;
-   background-color: #63b5ae;
-	transition: all 0.3s;
-	position: relative;
-	top:-100px;
-}
-
-.textsiteceis{
-	background-color: #00b6af;
-	font-size: 13px;
-	font-weight: 1000;
-	color:white;
-	transition: all 0.3s;
+.button-say button{
+	 border: 2px solid #6f7180;
 	transform: scale(1);
 }
 
-.sitevisitceis:hover{
-	border: 1px solid #008f89;
- 	transform: scale(1.1);
-	background: #539892;
+.button-say button img{
+	margin-bottom: 5px;
 }
 
-.sitevisitceis:hover .textsiteceis{
-	background: #008f89;
-	color: #cecece;
-	border: 1px solid #008f89;
+.button-say-hover-1{
+	position: fixed;
+	top: 8px;
+	left: 11px;
+	opacity: 0;
 }
 
-.namecus{
+.button-say-hover-0{
+	opacity: 1;
+}
+
+.button-say button:hover .button-say-hover-1{
+	opacity: 1;
+}
+
+.button-say button:hover .button-say-hover-0{
+	opacity: 0;
+}
+
+/*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*//*ОБО МНЕ*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Навыки*//*Навыки*//*Навыки*//*Навыки*//*Навыки*//*Навыки*//*Навыки*//*Навыки*/
+
+.Section-skill{
+	margin-top: 100px;
+}
+
+.text-margin-down{
+	margin-top: 90px;
+}
+
+.container-all{
+	display: inline-block;
+}
+
+.container-all img{
+	 -webkit-animation: Anim-Volna 2s infinite;
+    -o-animation: Anim-Volna 2s infinite;
+    animation: Anim-Volna 2s infinite;
+}
+
+
+
+.container-work img{
+	animation-delay: 0.5s;
+}
+
+.container-optimization img{
+	animation-delay: 1s;
+}
+
+.container-marketing img{
+	animation-delay: 1.5s;
+}
+
+.IMG-Stabilizator-op{
+	float: left;
+	margin: 75px 100px 0px 100px;
+	height: 35px;
+}
+
+.text-orange-op{
+	margin-top: 140px;
+	font-size: 15px;
+	color: #d87003;
+	font-weight: 620;
+}
+
+.text-skill{
+	width: 200px;
+	font-size: 11px;
+	text-align: center;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+
+/*Навыки*//*Навыки*//*Навыки*//*Навыки*//*Навыки*//*Навыки*//*Навыки*//*Навыки*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*/
+
+
+
+
+.Text-Ceis-Otstup{
+	margin-left: 60px;
+}
+
+.Text-Container-Ceis{
+	margin-top: 50px;
+}
+
+.text-telephone-Ceis{
+	display: none;
+}
+
+.Text-Ceis-1{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.Text-Ceis-2{
 	position: relative;
-	top: -250px;
+	left: 2px;
 }
 
-.nameceis2{
+.Button-Ceis{
+	margin-top: 15px;
+	padding: 5px 30px 5px 30px;
+	font-size: 18px;
+	font-weight: 501;
+	background-color: #00b6af;
+	border: 2px solid #00b6af;
+	white-space: pre; 
+}
+
+.Button-Ceis:hover{
+	background-color: #01a6a0;
+	border: 2px solid #01a6a0;
+}
+
+
+
+.Text-Ceis-Otstup-op{
+	margin-top: -165px;
+	z-index: 100px;
+	position: relative;
+	right: 100px;
+}
+
+.Section-Сeis{
+	margin-top: 210px;
+}
+
+.Rascet-border{
+	padding-bottom: 30px;
+}
+/*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*//*Кейсы*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Расчёт*//*Расчёт*//*Расчёт*//*Расчёт*//*Расчёт*//*Расчёт*//*Расчёт*//*Расчёт*/
+
+
+.Section-Rascet{
+	margin-top: 200px;
+}
+
+.Rascet-border{
+	border: 1px solid white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	width: 1000px;
+}
+
+.Text-Rascet-1{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 600;
+	color: #102032;
+}
+
+.Text-Rascet-2{
+	margin-top: 20px;
+	font-size: 25px;
+	font-weight: 600;
+	color: #102032;
+}
+
+.Rascet-Otstup{
+	margin-left: 20px;
+}
+
+.Rascet-Option{
+	background-color: #efefef;
+	border: 1px solid #efefef;
+	border-radius: 2px;
+	margin-left: -10px;
+	width:  98%;
+	height: 50px;
+	margin-top: 15px;
+	color: rgba(0,0,0,0.4);
+	font-weight: 600;
+	padding-left: 10px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	
+	background-image: url(../img/galochka-select.png);
+	background-repeat: no-repeat, repeat;
+	background-position: right 25px top 50%, 0 0;
+	background-size: 18px auto, 100%;
+}
+
+.Text-Otstup-Rascet{
+	position: relative;
+	left: 200px;
+}
+
+.line-gw{
+	display: inline;
+	background-color: #d2d2d2;
+	width: 94%;
+	height: 2px;
+	margin-top: 30px;
+}
+
+.Text-Rascet-3{
+	font-size: 15px;
+	margin-left: 20px;
+	margin-top: 15px;
+	font-weight: 600;
+	color: #102032;
+}
+
+.Text-Rascet-4{
+	font-size: 20px;
+	margin-top: 10px;
+	font-weight: 600;
+	color: #102032;
+}
+
+.right-position-rascet{
+	float: right;
+	margin-top: -80px;
+	margin-right: 10px;
+}
+
+.Button-Ceis-2{
+	margin-top: 15px;
+	padding: 5px 30px 5px 30px;
+	font-size: 18px;
+	font-weight: 501;
+	background-color: #00b6af;
+	border: 2px solid #00b6af;
+	white-space: pre; 
+}
+
+.Button-Ceis-2:hover{
+	background-color: #01a6a0;
+	border: 2px solid #01a6a0;
+}
+
+
+/*Расчёт*//*Расчёт*//*Расчёт*//*Расчёт*//*Расчёт*//*Расчёт*//*Расчёт*//*Расчёт*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Статистика*//*Статистика*//*Статистика*//*Статистика*//*Статистика*//*Статистика*/
+
+.Section-stat{
+	margin-top: 30px;
+}
+
+.IMG-Stabilizator-op-2{
+	float: left;
+	margin: 75px 100px 0px 100px;
+	height: 45px;
+}
+
+.text-impact-op{
+	margin-top: 140px;
+	font-size: 30px;
+	font-weight: 620;
+	color: #293b4f;
+	
+}
+
+.text-stat{
+	color: #293b4f;
+	width: 200px;
+	font-size: 13px;
+	text-align: center;
+	margin-left: 30px;
+	margin-top: 10px;
+	font-weight: 620;
+}
+
+
+/*Статистика*//*Статистика*//*Статистика*//*Статистика*//*Статистика*//*Статистика*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Отзывы*//*Отзывы*//*Отзывы*//*Отзывы*//*Отзывы*//*Отзывы*//*Отзывы*//*Отзывы*/
+
+.Section-Otzuv{
+	margin-top: 250px;
+}
+
+.Name{
+	display: inline;
+	font-weight: 601;
+}
+
+.Client-Value input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: #cfd2d7;
+    transition: 0.2s all linear;
+    outline: none;
+	margin-top: 50px;
+}
+
+.Client-Value input:checked {
+    background: #c96500;
+}
+
+.Client-Value-1{
+	position: relative;
+	right: 20px;
+}
+
+
+.Client-Value-3{
 	position: relative;
 	left: 20px;
 }
 
-.textceis{
-	font-weight: 560;
-	margin-top: 30px;
-	margin-bottom: 25px;
+/*Отзывы*//*Отзывы*//*Отзывы*//*Отзывы*//*Отзывы*//*Отзывы*//*Отзывы*//*Отзывы*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Контакты*//*Контакты*//*Контакты*//*Контакты*//*Контакты*//*Контакты*/
+
+.Section-Contact{
+	margin-top: 80px;
 }
 
-.DanText{
-	position: relative;
-	margin-left: 110px;
-	bottom: 250px;
-}
-
-.BackMainIMG{
-	margin-top: -200px;
-	margin-bottom: 250px;
-}
-
-.Webceis{
-	float: left;
-	position: relative;
-	right: 124px;
-	top:60px ;
-}
-
-.nameceis {
-	position: relative;
-	top: -75px;
-}
-
-.nameceis h4{
-	position: relative;
-	top: 30px;
-}
-
-.hus{
-	position: relative;
-	top:-24.5px;
-	left: 204px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Включает в себя Расчёт стоимости до информации Сроков и Стоимости */ 
-
-.DannoRasset{
-	border: 1px solid white;
-	display: block;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	padding: 20px;
-}
-
-.RascetName{
-	font-size: 40px;
-	text-align: center;
-	color: #1c2534;
-	font-weight:600;
-	padding-bottom: 50px;
-}
-
-
-.racshet{
-	display: block;
-}
-
-
-.List1OP12{
-	text-align: center;
-}
-
-.racshet p{
-	
-	font-size: 30px;
-	font-weight: 600;
-	color: #1c2534;
-}
-
-.racshet select{
-	width: 100%;
-	height: 40px;
-	background: #eeeeee;
-	border: 1px solid #eeeeee;
-	border-radius: 2px;
-	color: #737373;
-	font-size: 15px;
-	
-	padding-left: 10px;
-	margin-bottom: 50px;
-	
-	margin-top: 5px;
-}
-
-.racshet option{
-	color: #737373;
-	font-size: 15px;
-	
-}
-
-.racshet2 p{
-	
-	font-size: 30px;
-	font-weight: 600;
-	color: #1c2534;
-}
-
-.racshet2 select{
-	width: 100%;
-	height: 40px;
-	background: #eeeeee;
-	border: 1px solid #eeeeee;
-	border-radius: 2px;
-	color: #737373;
-	font-size: 15px;
-	
-	padding-left: 10px;
-	margin-bottom: 30px;
-	margin-top: 5px;
-}
-
-.racshet2 option{
-	color: #737373;
-	font-size: 15px;
-	
-}
-
-.itog{
-	font-weight: bold;
-	color: #1c2534;
-	font-size: 19px;
-	margin-top: 30px;
-}
-
-.itog2{
-	font-weight: bold;
-	color: #1c2534;
-	font-size: 19px;
-	margin-top: -20px;
-}
-
-.itognumber{
-	float: right;
-	font-size: 22px;
-	color: #1c2534;
-}
-
-.itognumber2{
-	float: right;
-	font-size: 22px;
-	color: #1c2534;
-	margin-top: -30px;
-}
-
-.Rascetstoimostic h3{
-	font-size: 25px;
-}
-
-.sitevisitceis_color{
-	border: 1px solid #63b5ae;
-   background-color: #63b5ae;
+.color-white{
 	color: white;
-	font-weight: 700;
-	
-}
-.sitevisitceis_color:hover{
-	border: 1px solid #008f89;
-	background: #539892;
-	color: #cecece;
 }
 
-.sitevisitceis_color:hover .textsiteceis{
-	background: #008f89;
-	color: #cecece;
-	border: 1px solid #008f89;
+.text-contact-otstup-1{
+	margin-top: 95px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.SmilePeople{
-	font-size: 30px;
-	color: #323d4f;
-	font-weight: bold;
-	margin-top:5px;
-	margin-bottom: 20px;
-	font-family: 'Franklin';
-}
-.Coding{
-   font-size: 30px;
-	color: #323d4f;
-	font-weight: bold;
-	margin-top:5px;
-	margin-bottom: 20px;
-	font-family: 'Franklin';
-}
-.ProjectCompleted{
-   font-size: 30px;
-	color: #323d4f;
-	font-weight: bold;
-	margin-top:5px;
-	margin-bottom: 20px; 
-	font-family: 'Franklin';
-}
-.WinWin{
-	font-size: 30px;
-	color: #323d4f;
-	font-weight: bold;
-	margin-top:5px;
-	margin-bottom: 20px;
-	font-family: 'Franklin';
+.text-contact-otstup-2{
+	margin-top: 25px;
 }
 
-.SmilePeopleP{
-	color: #3f495a;
-	font-weight: bold;
-	font-size: 12px;
-}
-.CodingP{
-	color: #3f495a;
-	font-weight: bold;
-	font-size: 12px;
-}
-.ProjectCompletedP{
-	color: #3f495a;
-	font-weight: bold;
-	font-size: 12px;
-}
-.WinWinP{
-	color: #3f495a;
-	font-weight: bold;
-	font-size: 12px;
-}
-
-.UpMesto2{
-	position: relative;
-	bottom: 30px;
-}
-
-.LEFTMesto2{
-	margin-left: 50px;
-	position: relative;
-	left: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Тут вот Отзывы*/ 
-
-.client{
-	text-align: center;
-}
-
-.OtzuvText{
-	font-size: 35px;
-	color: #243042;
-	font-weight: 610;
-	margin-bottom: 20px;
-}
-
-.client h4{
-	color: #243042;
-}
-
-.mixail{
+.IMG-Stabilizator-op-3{
 	float: left;
-	font-weight: bold;
-}
-
-.mixaGaz{
-float: left;
-	margin-top: 30px;
-	color: #172c41;
-}
-
-.client h3{
-	float: left;
-	color: #243042;
-	display: block;
-}
-
-.clientvalue{
-	margin-top: 40px;
-	text-align: center;
-	color: orange;
-}
-
-.clienture input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-
-  background: #cfd2d7;
-  transition: 0.2s all linear;
-  outline: none;
-	margin-left: 10px;
-}
-
-.clienture input:checked {
-  background: #c96500;
-}
-
-.IMGclient{
-	margin-top:60px;
-	margin-bottom:30px; 
-}
-
-.textclu{
-	 font-weight: 500;
-	color: #172c41;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Тут Контакт*/
-
-.contact{
-	text-align: center;
-}
-
-.contact h2{
-	font-size: 30px;
-	font-weight: bold;
-}
-
-.contact h3{
-	font-size: 13px;
-}
-
-.contactfone img{
-	width: calc(100%-25px);
+	margin: 50px 100px 10px 100px;
 	height: 25px;
 }
 
-
-
-
-
-
-.MyMapping{
-	float: left;
-}
-
-.Emailing{
-	float: left;
-	padding-left: 100px;
-}
-
-
-.telephone{
-	float: left;
-	padding-left: 100px;
-}
-
-
-
-
-
-
-
-.DataInfo{
-	display: block;
+.container-Mail{
 	position: relative;
-	top: 40px;
+	top: -20px;
 }
 
-.soobjenie{
+.container-Telephone{
 	position: relative;
-	top: 100px;
+	top: -20px;
 }
 
-.soobjenie h3{
-	font-size: 20px;
-	position: relative;
-	bottom: 45px;
+.text-op-m2{
+	font-size: 18px;
+	font-weight: 600;
 }
 
-.namesoobjenie {
-	float: left;
-	position: relative;
-	left: 165px;
+.standart-contact-form{
+	background-color: rgba(255 , 255 , 255 , 0.8);
+	border: 1px solid rgba(255 , 255 , 255 , 0.8);
+	border-radius: 0px;
+	color: #5c5d5e;
+	font-weight: 600;
 }
 
-.namesoobjenie input{
-	padding-left: 10px;
-	width: 350px;
-	height: 30px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
+.standart-contact-form:hover{
+	background-color: rgba(255 , 255 , 255 , 0.8);
+	border: 1px solid rgba(255 , 255 , 255 , 0.8);
+	border-radius: 0px;
 }
 
-.Emailsoobjenie {
-	float: left;
-	position: relative;
-	left: 192px;
-	
+
+.contact-text-down{
+	margin-top: 30px;
 }
 
-.Emailsoobjenie input{
-	padding-left: 10px;
-	width: 350px;
-	height: 30px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-}
-   
-.SMSsoobjenie{
-	position: relative;
-	right: 10px;
-	bottom: 20px;
-}
-
-.SMSsoobjenie input{
-	width: 727px;
+.standart-contact-size{
 	height: 90px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
 	padding-bottom: 60px;
-	padding-left: 10px;
 }
 
-
-.Givesoobjenie input{
-	width: 110px;
-	height: 40px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
+.button-contact{
+	margin-top: 20px;
+	border: 2px solid white;
 	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -20px;
+	font-weight: 600;
+	animation:5s
 }
 
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
+.button-contact:hover{
+	background-color: white;
 	color: black;
+	animation-duration: 2s;
+}
+
+.contact-telephone{
+	display: none;
+}
+
+.contact-PC{
+	display: block;
+}
+/*Контакты*//*Контакты*//*Контакты*//*Контакты*//*Контакты*//*Контакты*/
+
+
+
+
+
+/*Копирайтинг*//*Копирайтинг*//*Копирайтинг*//*Копирайтинг*//*Копирайтинг*/
+
+footer{
+	background-color: #2c3e51;
+	height: 50px;
+	margin-top: 190px;
+	padding-top: 15px;
+}
+
+/*Копирайтинг*//*Копирайтинг*//*Копирайтинг*//*Копирайтинг*//*Копирайтинг*/
+
+
+
+
+
+
+
+
+
+
+/*Адаптивность*//*Адаптивность*//*Адаптивность*//*Адаптивность*//*Адаптивность*/
+
+/*1800px*//*1800px*//*1800px*//*1800px*//*1800px*/
+
+@media(max-width : 1800px){
+	.Section-OboMne{
+	margin-top: 370px;
+}
+
+	.Section-Сeis{
+	margin-top: 180px;
+}
+	
+	.Section-Otzuv{
+	margin-top: 200px;
+}
+	
+	footer{
+	margin-top: 142px;
+}
+}
+
+/*1800px*//*1800px*//*1800px*//*1800px*//*1800px*/
+
+
+
+
+
+/*1700px*//*1700px*//*1700px*//*1700px*//*1700px*/
+
+@media(max-width : 1700px){
+	.Section-OboMne{
+	margin-top: 300px;
+}
+	.text-margin-down{
+	margin-top: 40px;
+}
+	
+	.Section-Сeis{
+	margin-top: 210px;
+}
+	
+	footer{
+	margin-top: 100px;
+}
+}
+
+/*1700px*//*1700px*//*1700px*//*1700px*//*1700px*/
+
+
+
+
+
+/*1600px*//*1600px*//*1600px*//*1600px*//*1600px*/
+
+@media(max-width : 1600px){
+	.text-m1{
+	margin-top: 350px;
+	font-size: 55px;
+}
+
+	.Section-Сeis{
+	margin-top: 180px;
+}
+	
+	footer{
+	margin-top: 50px;
+}
+}
+
+/*1600px*//*1600px*//*1600px*//*1600px*//*1600px*/
+
+
+
+
+
+
+/*1500px*//*1500px*//*1500px*//*1500px*//*1500px*/
+
+@media(max-width : 1500px){
+	.Section-OboMne{
+	margin-top: 270px;
+}
+	
+	.Section-Сeis{
+	margin-top: 150px;
+}
+	
+	.Section-Otzuv{
+	margin-top: 150px;
+}
+	
+	.text-contact-otstup-1{
+	margin-top: 30px;
+}
+}
+
+/*1500px*//*1500px*//*1500px*//*1500px*//*1500px*/
+
+
+
+
+
+/*1400px*//*1400px*//*1400px*//*1400px*//*1400px*/
+
+@media(max-width : 1400px){
+	.Section-OboMne{
+	margin-top: 230px;
+}
+	
+	.text-margin-down{
+	margin-top: 15px;
+}
+	
+	.Section-Сeis{
+	margin-top: 130px;
+}
+}
+
+/*1400px*//*1400px*//*1400px*//*1400px*//*1400px*/
+
+
+
+
+
+/*1399px*//*1399px*//*1399px*//*1399px*//*1399px*/
+
+@media (max-width : 1399px) {
+	.button-m-box{
+	margin-right: 600px;
+}
+	
+	.Text-Ceis-Otstup-op{
+	right: 30px;
+}
+	
+	.Text-Ceis-Otstup{
+	margin-left: 0px;
+}
+	
+	.IMG-Stabilizator-op-2{
+	height: 35px;
+	margin: 90px 100px 0px 100px;
+}
+	
+	
+	
+	
+	
+	
+	
 
 }
 
-.Givesoobjenie input:active{
-	transform: scale(1.1);
+/*1399px*//*1399px*//*1399px*//*1399px*//*1399px*/
 
+
+
+
+
+
+/*1350px*//*1350px*//*1350px*//*1350px*//*1350px*/
+
+@media(max-width : 1350px){
+	.Section-Contact{
+		background-image: url(../img/fonecontact.jpg);
+		padding-bottom: 20px;
+	}
+	
+	footer{
+	margin-top: 0px;
+}
 }
 
-.soobjenie{
+/*1350px*//*1350px*//*1350px*//*1350px*//*1350px*/
+
+
+
+
+
+/*1300px*//*1300px*//*1300px*//*1300px*//*1300px*/
+
+@media(max-width : 1300px){
+	.text-m1{
+	margin-top: 300px;
+	font-size: 50px;
+	}
+	
+	.button-m-box{
+		transform: scale(0.8);
+		margin-top: 10px;
+	}
+	
+	.Section-OboMne{
+	margin-top: 270px;
+}
+	
+	.Section-Сeis{
+	margin-top: 100px;
+}
+}
+
+/*1300px*//*1300px*//*1300px*//*1300px*//*1300px*/
+
+
+
+
+
+
+/*1200px*//*1400px*//*1400px*//*1400px*//*1400px*/
+
+@media(max-width : 1200px){
+	.Section-OboMne{
+	margin-top: 200px;
+}
+	
+	.IMG-Stabilizator-op{
+	margin: 25px 100px 0px 100px;
+	height: 35px;
+}
+	
+	.text-orange-op{
+	margin-top: 80px;
+	font-size: 15px;
+}
+	
+	.Section-Сeis{
+	margin-top: 140px;
+}
+	
+	
+}
+
+/*1200px*//*1400px*//*1400px*//*1400px*//*1400px*/
+
+
+
+	
+	
+
+/*1199px*//*1199px*//*1199px*//*1199px*//*1199px*/
+
+	@media(max-width : 1199px){
+	.text-m2{
+		margin-left: 120px;
+		}
+		.text-m1{
+	margin-top: 200px;
+	font-size: 40px;
+}
+		
+		.text-orange-op{
+	margin-top: 80px;
+	font-size: 15px;
+}
+	
+		
+		.button-m-box{
+	margin-right: 500px;
+			
+}
+		
+		.Section-OboMne{
+	margin-top: 300px;
+}
+		
+		.Section-skill{
+			background-image: url(../img/HowMeMogu.jpg);
+		}
+	
+		.Section-Сeis{
+	margin-top: 90px;
+}
+		
+		.Section-stat{
+	background-image: url(../img/fonestatistic.jpg);
+			background-repeat: no-repeat;
+}
+		
+		.position-stabilizator-stat{
+			position: relative;
+			top: -50px;
+		}
+		
+	.Section-Otzuv{
+	margin-top: 70px;
+}
+		
+		.text-contact-otstup-2{
+			margin-bottom: 20px;
+		}
+		
+		.container-work img{
+	animation-delay: 1s;
+}
+
+.container-optimization img{
+	animation-delay: 0s;
+}
+
+.container-marketing img{
+	animation-delay: 1s;
+}
+}
+
+/*1199px*//*1199px*//*1199px*//*1199px*//*1199px*/	
+
+
+
+
+
+/*1100px*//*1100px*//*1100px*//*1100px*//*1100px*/
+
+@media(max-width : 1100px){
+	.Section-OboMne{
+	margin-top: 250px;
+}
+}
+
+/*1100px*//*1100px*//*1100px*//*1100px*//*1100px*/
+
+
+
+
+
+/*1000px*//*1000px*//*1000px*//*1000px*//*1000px*/
+
+@media(max-width : 1000px){
+	.Section-OboMne{
+	margin-top: 200px;
+}
+}
+
+/*1000px*//*1000px*//*1000px*//*1000px*//*1000px*/
+
+
+
+
+
+/*992px*//*992px*//*992px*//*992px*//*992px*/
+
+@media(max-width : 992px){
+	.header ul{
+	display: none;
+}
+	.Pos-Tel-MENU{
+	display: inline;
+	position: absolute;
+	right: 200px;
+	top: 15px;
+}
+	
+	.Pos-MENU ul{
+		display: none;
+	}
+	
+	
+	
+	.Text-Ceis-Otstup-op{
+	margin-top: 0px;
+	z-index: 0px;
+	position: static;
+		display: none;
+}
+	
+	.text-center-lg{
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	.text-telephone-Ceis{
+	display: block;
+		margin-bottom: 20px;
+	}
+	
+	.Ceis-Client{
+		float: left;
+	}
+	
+	.Ceis-Website{
+		float: right;
+	}
+	
+	.Website-p-Otstup{
+		margin-left: 90px;
+	}
+	
+	.Button-Ceis{
+		margin-top: 70px;
+	}
+	
+	.Button-Otstup-Ceis{
+		text-align: center;
+	}
+	
+	.Button-Telephone-Otstup-1{
+		margin-left: 60px;
+	}
+}
+/*992px*//*992px*//*992px*//*992px*//*992px*/
+
+
+
+
+
+/*991px*//*991px*//*991px*//*991px*//*991px*/
+
+@media(max-width : 991px){
+	.text-m2{
+		margin-left: 60px;
+		}
+	
+	.text-m1{
+	margin-top: 150px;
+	font-size: 30px;
+}
+	
+	.button-m-box{
+		transform: scale(1);
+		margin-top: 10px;
+		
+	}
+	
+	.button-m-R{
+		margin-top: 10px;
+		margin-left: 60px;
+	}
+	
+	.button-m-R button{
+		padding: 5px 40px 5px 40px;
+	}
+	
+	.button-m-L{
+		margin-top: 10px;
+		margin-left: 100px;
+	}
+	
+	.button-m-L button{
+		padding: 5px 30px 5px 30px;
+	}
+	
+	.Section-OboMne{
+	margin-top: 230px;
+}
+	
+	.Section-Rascet{
+	margin-top: 100px;
+}
+	
+}
+
+/*991px*//*991px*//*991px*//*991px*//*991px*/
+
+
+
+
+
+
+/*900px*//*900px*//*900px*//*900px*//*900px*/
+
+@media(max-width : 900px){
+	.Section-OboMne{
+	margin-top: 150px;
+}
+}
+
+/*900px*//*900px*//*900px*//*900px*//*900px*/
+
+
+
+
+
+/*800px*//*800px*//*800px*//*800px*//*800px*/
+
+@media(max-width : 800px){
+	.Section-OboMne{
+	margin-top: 100px;
+}
+}
+
+/*800px*//*800px*//*800px*//*800px*//*800px*/
+
+
+
+
+
+/*767px*//*767px*//*767px*//*767px*//*767px*/
+
+@media(max-width : 767px){
+	.text-m2{
+		margin-left: 20px;
+		font-size: 12px;
+		margin-top: -15px;
+		}
+	.text-m1{
+	margin-top: 100px;
+	font-size: 20px;
+}
+	
+	
+	.Pos-Tel-MENU{
+	right: 100px;
+}
+	
+	
+	.button-m-box{
+		white-space:pre;
+	}
+	
+	.button-m-box button{
+		white-space:pre;
+		font-size: 10px;
+	}
+	
+	.button-m-R{
+		margin-top: 10px;
+		margin-left: 180px;
+	}
+	
+	.button-m-R button{
+		padding: 5px 40px 5px 40px;
+	}
+	
+	.button-m-L{
+		margin-top: 10px;
+		margin-left: 65px;
+	}
+	
+	.button-m-L button{
+		padding: 5px 30px 5px 30px;
+	}
+	
+	
+	.Section-OboMne{
+	margin-top: 200px;
+}
+	
+	.Button-Telephone-Otstup-1{
+		margin-left: 20px;
+	}
+	
+	.Section-stat{
+	background-repeat: repeat;
+}
+	
+	.contact-telephone{
 	display: block;
 }
 
-.BackMain3{
-	position: absolute;
-	z-index: -1;
-	top: -100px;
+.contact-PC{
+	display: none;
 }
-
-.DannoDanno{
-	color: white;
-}
-
-.NEVGEO{
-	position: relative;
-	top: -7px;
-}
-
-.DataInfo p{
-	position: relative;
-	bottom: -10px;
-	font-weight: 600;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Тут несуществующая карта*/
-
-.world{
-	border: 10px solid black;
-	width: 100%;
-	height: 350px;
-}
-
-.world h3{
-	border: 1px solid black;
-	width: 200px;
-	height: 80px;
-	margin-top: 140px;
-	margin-left: 45%;
-	padding-top: 17px;
-	background: black;
-	color: white;
-	font-size: 16px;
-	font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*А тут уже конечный блок... Copyright © 2021 Андрей Браун. Design by Web*/
-
-.end{
-	border: 1px solid #354051;
-	background: #354051;
-	text-align: center;
-	width: 100%;
-	height: 60px;
-	color: white;
-	padding-top: 25px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  <Расположение Элементов>  */
-
-
-
-
-.header{
 	
-	width: 100%;
-	height: 60px;
-	background-color: #344051;
-	color: white;
-	position: fixed;
-	z-index: 2;
-}
-
-.DannoMe{
-		position: static;
-		margin-top: 150px;
-		margin-bottom: 150px;
-	}
-
-.DannoNavuki{
-		position: relative;
-		bottom: -60px;
-		
-	}
-
-.DannoCeis{
-	position: relative;
-	bottom: -20px;
-}
-
-.DannoRascet{
-	position: relative;
-	margin-bottom: 180px;
-}
-
-.DannoNavuki2{
-		position: relative;
-		bottom: 60px;
-		
-	}
-
-.Dannoclienture{
-	margin-bottom: 250px;
-	margin-top: 400px;
-}
-
-
-.DannoDanno{
-	position: relative;
-	margin-bottom: 250px;
-	
-}
-
-
-
-.DannoMap{
-}
-
-
-.end{
-	position: absolute;
- 	left: 0px;
-}
-
-
-
-/*  </Расположение Элементов>  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /*   <Адаптивность>   */
-
-
-
-
-@media(max-width : 991px)
-{
-	.PC_Sizes_Header{
-		display:block;
-		position: fixed;
-		top: -500px;
-		opacity: 0;
-	}
-	
-	.Telephone_Sizes_Header{
-	opacity: 1;
-	}
-	
-	.clienture{
-	position: relative;
-	bottom: 420px;
-}
-}
-
-@media(min-width : 992px)
-{
-	.PC_Sizes_Header{
-		opacity: 1;
-	}
-	
-	.Telephone_Sizes_Header{
-		opacity: 0;
-		display:block;
-		position: fixed;
-		top: -500px;
-	}
-}
-
-
-@media(max-width : 1700px)
-{
-		.main{
-	top: 375px;
-	}
-			
-	.main h4{
-	font-size: 20px;
+	.position-stabilizator-stat{
+			position: relative;
+			top: 0px;
 		}
 	
-	.BackMain{
-	top: 10px;
+	.container-work img{
+	animation-delay: 0s;
 }
-	
-	.fonctoiamogy{
-		position: relative;
-	bottom: 20px;
+
+.container-optimization img{
+	animation-delay: 0s;
 }
-	
-	.fonctoiamogy2{
-		position: relative;
-	bottom: 20px;
+
+.container-marketing img{
+	animation-delay: 0s;
 }
 }
 
-	
-	
-	
-	
-@media(max-width : 1500px)
-{
-		.main{
-	top: 335px;
-	}
-	
-	.BackMain{
-	top: 20px;
-}
-	
-	.fonctoiamogy{
-		position: relative;
-	bottom: 50px;
-}
-	
-	.fonctoiamogy2{
-		position: relative;
-	bottom: 50px;
-}
-	
-	.contactfone{
-		position: relative;
-		bottom: 70px;
-	}
-}
-
-	
-	
-	
-	
-@media(max-width : 1400px)
-{
-	.main h1{
-	font-size: 50px;
-		}
-		.main{
-	top: 275px;
-}
-
-	
-	
-}
-
-@media(max-width : 1399px)
-{
-	.DannoRascet{
-		bottom: 500px;
-	}
-	
-	.DannoNavuki{
-	top: -240px;
-}
-	
-	.DannoNavuki2{
-	margin-top: -620px;
-}
-	
-	
-	.Dannoclienture{
-	margin-top: 200px;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.namesoobjenie {
-	float: left;
-	position: relative;
-	left: 95px;
-}
-.Emailsoobjenie {
-	float: left;
-	position: relative;
-	left: 122px;
-	
-}
-.SMSsoobjenie{
-	position: relative;
-	right: 5px;
-	bottom: 20px;
-}
-	
-	.soobjenie h3{
-	bottom: 25px;
-		
-}
-	
-	.soobjenie{
-	top: 60px;
-		
-}
-	
-	.contactfone{
-		bottom: 90px;
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.mesto1{
-	margin-left: 100px;
-		
-		position: relative;
-	left:-5px;
-}
-	
-	.mesto2{
-	margin-left: 100px;
-		
-		position: relative;
-	left:-5px;
-}
-	
-	.fonctoiamogy{
-		position: relative;
-		bottom: 100px;
-	}
-	
-	.fonctoiamogy2{
-		position: relative;
-		bottom: 100px;
-	}
-	.BackMain2{
-	top: 150px;
-}
-	
-	.ctoimma{
-		background-image: url(../img/HowMeMogu.jpg);
-		width: 100%;;
-		height: 300px;
-		display: block;
-		position: relative;
-		z-index: -1;
-		top: -70px;
-		opacity: 0;
-		border: 1px solid rgba(1 , 1 ,1 , 0.1);
-	}
-	
-	.ctoimma2{
-		background-image: url(../img/fonestatistic.jpg);
-		width: 100%;;
-		height: 300px;
-		display: block;
-		position: relative;
-		z-index: -1;
-		top: -70px;
-		opacity: 0;
-		border: 1px solid rgba(1 , 1 ,1 , 0.1);
-	}
-	
-	
-	.DannoCeis{
-	bottom: 300px;
-}
-	
-	
-	
-	.obomne{
-	font-size: 30px;
-	font-weight: 600;
-}
-
-.obomne img{
-	width: 200px;
-	height: 200px;
-}
-
-.imgactive{
-	opacity: 0;
-	transition: all 0.3s;
-}
-
-.info{
-	font-size: 15px;
-	color: #3f495a;
-	font-weight: 400;
-}
-
-.download{
-	border: 1px solid #6d7682;
-	border-radius: 5px; 
-	color: #6d7682;
-	font-size: 13px;
-	background-color: white;
-	transition: all 0.3s;
-	transform: scale(1);
-}
-
-.download:hover{
-	transform: scale(1.1);
-	color:white;
-	background:#6d7682;
-}
-
-.download:hover .imgactive{
-	opacity: 1;
-}
-
-
-.DannoMe{
-	position: relative;
-	top: -180px;
-}
-
-.linkOboMny{
-	position: relative;
-	
-	top: 30px;
-}
+/*767px*//*767px*//*767px*//*767px*//*767px*/
 
 
 
 
 
+/*700px*//*700px*//*700px*//*700px*//*700px*/
 
-
-
-
-
-
-
- /* Фон что я могу с информацией */
-
-.ctoiamogy{
-	font-size: 30px;
-	font-weight: 600;
+@media(max-width : 700px){
+	.Section-OboMne{
+	margin-top: 160px;
 }
-	
-	.fonctoiamogy img{
-	height: 30px;
-}
-	
-	.fonctoiamogy2 img{
-	height: 30px;
 }
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.sitevisitceis{
-	top:-90px;
-}
-	
-	
-	
-}
-
-
-.textceis{
-	margin-bottom: 8px;
-}
+/*700px*//*700px*//*700px*//*700px*//*700px*/
 
 
 
 
-@media(max-width : 1200px)
-{
-	.main h1{
-	font-size: 40px;
-}
+
+/*600px*//*600px*//*600px*//*600px*//*600px*/
+
+@media(max-width : 600px){
 	
-	.main{
-	top: 235px;
-}
-	
-	.main h4{
-	font-size: 17px;
+	.text-m2{
+		font-size: 10px;
+		margin-top: -15px;
 		}
 	
-	.BackMain{
-	top: 60px;
+	.Section-OboMne{
+	margin-top: 100px;
 }
-	
-	
-	
 }
 
+/*600px*//*600px*//*600px*//*600px*//*600px*/
 
 
 
 
 
+/*575px*//*575px*//*575px*//*575px*//*575px*/
 
-
-
-
-
-
-
-
-
-
-@media(max-width : 1199px)
-{
+@media(max-width : 575px){
 	
-	.contact{
-		position: relative;
-		top: 50px;
+	.button-m-box{
+		position: absolute;
+		top: 240px;
+		left: 80px;
 	}
 	
-	.mesto1{
-	margin-left:0px;
-		left: 5px;
-	
-}
-	
-	.mesto2{
-	margin-left:0px;
-		left: 5px;
-	
-}
-	
-	.fonctoiamogy{
-		position: relative;
-		bottom: 150px;
-	}
-	
-	.fonctoiamogy2{
-		position: relative;
-		bottom: 150px;
-	}
-	
-	.DanText{
-	margin-left: 70px;
-	bottom: 200px;
-}
-	
-	
-	
-	
-	.sitevisitceis{
-	top:-110px;
-}
-	
-	.textceis{
-	margin-bottom: -20px;
-}
-	
-	.DannoCeis{
-	bottom: 270px;
-}
-	
-	
-
-	
-	
-	
-	
-	
-	
-	.namesoobjenie {
-	float: left;
-	position: relative;
-	left: 45px;
-}
-.Emailsoobjenie {
-	float: left;
-	position: relative;
-	left: 22px;
-	
-}
-.SMSsoobjenie{
-	position: relative;
-	right: 5px;
-	bottom: 25px;
-}
-	
-	.soobjenie h3{
-	bottom: 5px;
-		
-}
-	
-	.soobjenie{
-	top: 90px;
-		
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	.namesoobjenie input{
-	padding-left: 10px;
-	width: 300px;
-	height: 30px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-}
-.Emailsoobjenie input{
-	padding-left: 10px;
-	width: 300px;
-	height: 30px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-}
-.SMSsoobjenie input{
-	width: 627px;
-	height: 60px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-	padding-bottom: 30px;
-	padding-left: 10px;
-}
-	
-	
-	
-	.Givesoobjenie input{
-	width: 80px;
-	height: 40px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -20px;
-}
-
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
-	color: black;
-
-}
-	
-
-	
-	.contact h2{
-	font-size: 20px;
-	font-weight: bold;
-}
-
-.contact h3{
-	font-size: 12px;
-}
-	
-	.DataInfo{
-		right: 80px;
-	top: 60px;
-}
-	
-	.contactfone{
-		top: -130px;
-	}
-
-}
-
-
-
-
-
-
-
-@media(max-width : 1000px)
-{
-	.main h1{
-	font-size:37px;
-}
-	
-	.main{
-	top: 200px;
-}
-	
-	.BackMain{
-	top: 50px;
-}
-	
-	.Web_Styling img{
-	animation-delay: 1s;
-}
-
-.Working img{
-	animation-delay: 2s;
-}
-.CEO_Optimization img{
-	animation-delay: 1s;
-}
-.Marketing img{
-	animation-delay: 2s;
-}
-}
-
-@media(max-width : 991px)
-{
-	
-	.contactfone img{
-	height: 15px;
-}
-	
-	.DataInfo p{
+	.button-m-box button{
+		white-space:pre;
 		font-size: 10px;
 	}
 	
-	.namesoobjenie {
-	float: left;
-	position: relative;
-	left: 80px;
-}
-.Emailsoobjenie {
-	float: left;
-	position: relative;
-	left: 290px;
-	bottom: 21px;
-	
-}
-.SMSsoobjenie{
-	position: relative;
-	right: 5px;
-	bottom: 25px;
-}
-	
-	.soobjenie h3{
-	bottom: 2px;
-	font-size: 15px;
-}
-	
-	.soobjenie{
-	top:40px;
-		
-}
-	
-	.contactfone{
-		top: -120px;
-	}
-	
-	.DannoNavuki2{
-		margin-top: 50px;
-	}
-	
-	.Dannoclienture{
-	margin-top: 350px;
-		margin-bottom: -100px;
-}
-	
-	
-	.namesoobjenie input{
-	padding-left: 10px;
-	width: 200px;
-	height: 20px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-	font-size: 12px;
-}
-.Emailsoobjenie input{
-	padding-left: 10px;
-	width: 200px;
-	height: 20px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-	font-size: 12px;
-}
-.SMSsoobjenie input{
-	width: 410px;
-	height: 60px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-	padding-bottom: 30px;
-	padding-left: 10px;
-	font-size: 12px;
-}
-	
-	
-	
-	.Givesoobjenie input{
-	width: 70px;
-	height: 30px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -30px;
-		font-size: 12px;
-}
-
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
-	color: black;
-
-}
-	
-	
-	
-	
-	
-	
-	
-
-	
-	.contact h2{
-	font-size: 14px;
-	font-weight: bold;
-}
-
-.contact h3{
-	font-size: 12px;
-}
-	
-	.DataInfo{
-		right: 80px;
-	top: 50px;
-}
-	
-	.contactfone{
-		bottom: 140px;
-	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.main{
-	left: -70px;
-}
-	
-	.mesto1{
-		left: 90px;
-	}
-	
-	.mesto2{
-		left: 70px;
-	}
-	
-	.fonctoiamogy{
-		position: relative;
-		bottom: 300px;
-	}
-	.fonctoiamogy2{
-		position: relative;
-		bottom: 300px;
-	}
-	
-	
-	.ctoimma{
-		opacity: 1;
-		
-	}
-	
-	.ctoimma2{
-		opacity: 1;
-		
-	}
-	
-	.DannoNavuki{
-	position: relative;
-	top: -50px;
-}
-	
-	
-	.DannoNavuki2{
-	position: relative;
-	top: -300px;
-}
-	
-	
-	.DanText{
-	bottom: 150px;
-}
-	
-	
-	
-	.sitevisitceis{
-	top:-160px;
-}
-	
-	
-	.DannoCeis{
-		bottom: 150px;
-	}
-	
-	
-	
-	.DannoRascet{
-		bottom: 300px;
-	}
-	
-	
-	
-	
-	
-	.DannoMe{
-		top: -100px;
-	}
-}
-
-
-@media(max-width : 868px)
-{
-	.fonctoiamogy{
-		bottom: 260px;
-	}
-	
-	.fonctoiamogy2{
-		bottom: 260px;
-	}
-	
-	.mesto1{
-		right: -24px;
-	}
-	.mesto2{
-		right: -24px;
-	}
-}
-
-
-@media(max-width : 820px)
-{
-	
-	.Givesoobjenie input{
-	width: 70px;
-	height: 30px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -80px;
-	left:300px;
-		font-size: 12px;
-}
-
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
-	color: black;
-
-}
-	
-	.DataInfo{
-		left: -160px;
-	}
-	
-	.Emailing{
-		position: relative;
-		left: -210px;
-		top: 70px;
-	}
-	
-	.telephone{
-		position: relative;
-		left: -410px;
-		top: 140px;
-	}
-	
-	.soobjenie{
-		top: -20px;
-	}
-	
-}
-
-
-
-@media(max-width : 800px)
-{
-	.main h1{
-	font-size: 35px;
-}
-	
-	.main{
-	top: 155px;
-}
-	
-	
-	.BackMain{
-	top: 60px;
-}
-	
-	.DannoMe{
-		top: -150px;
-	}
-}
-
-
-@media(max-width : 767px)
-{
-	
-	.mesto1{
-		left:0px;
-	
-}
-	
-	.mesto2{
-		left:-20px;
-	
-}
-	
-	.fonctoiamogy{
-		bottom: 260px;
-	}
-	.fonctoiamogy2{
-		bottom: 260px;
-	}
-	
-	
-	
-	.DanText{
-	bottom: 110px;
-}
-	
-	
-	
-	.sitevisitceis{
-	top:-140px;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.Givesoobjenie input{
-	width: 70px;
-	height: 30px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -80px;
-	left:350px;
-		font-size: 12px;
-}
-
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
-	color: black;
-
-}
-	
-	.DataInfo{
-		left: -160px;
-		top: 30px;
-	}
-	
-	.Emailing{
-		position: relative;
-		left: -210px;
-		top: 70px;
-	}
-	
-	.telephone{
-		position: relative;
-		left: -195px;
-		top: 70px;
-	}
-	
-	.soobjenie{
-		top: -50px;
-		right: 60px;
-	}
-	
-	.contact{
-		position: relative;
-		top: 40px;
-	}
-}
-
-
-@media(max-width : 700px)
-{
-	.BackMain{
-	top: 60px;
-}
-	
-	.main{
-	top: 125px;
-}
-	
-	.Givesoobjenie input{
-	width: 50px;
-	height: 20px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -80px;
-	left:350px;
-		font-size: 8px;
-}
-
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
-	color: black;
-
-}
-	
-	
-	
-
-	
-	
-	
-}
-
-
-@media(max-width : 600px)
-{
-	.main{
-	top: 90px;
-		left: -50px; 
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width : 575px)
-{
-	.mesto1{
-		position: relative;
-		left: -20px;
-	}
-	
-	.mesto2{
-		position: relative;
-		left: -55px;
-	}
-	
-	.Web_Styling{
-	float: inherit;
-}
-	
-	.Working{
-	float: inherit;
-}
-	
-	.CEO_Optimization{
-	float: inherit;
-}
-	
-	.Marketing{
-	float: inherit;
-}
-	
-
-	
-	.fonctoiamogy{
-		bottom: 280px;
-	}
-	
-	.fonctoiamogy2{
-		bottom: 280px;
-	}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width : 450px)
-{
-	.main{
-		position: relative;
-		right: -250px;
-	}
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 1900px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: 150px;
-		margin-bottom: 150px;
-	}
-	
-	
-}
-
-@media(max-width: 1800px)
-{
-	.DannoMe{
-		position: static;
+	.button-m-R{
+		float: none;
 		margin-top: -60px;
-		margin-bottom: 150px;
+		margin-left: 0px;
+		
 	}
 	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 210px;
-}
-}
-
-@media(max-width: 1700px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: 50px;
-		margin-bottom: 150px;
+	.button-m-R button{
+		padding: 5px 40px 5px 40px;
 	}
 	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 170px;
-}
-}
-
-@media(max-width: 1600px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: 20px;
-		margin-bottom: 150px;
+	.button-m-L{
+		float: none;
+		margin-top: -20px;
+		margin-left: 0px;
 	}
 	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 120px;
-}
-}	
-	
-@media(max-width: 1500px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -5px;
-		margin-bottom: 150px;
+	.button-m-L button{
+		padding: 5px 30px 5px 30px;
 	}
 	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 75px;
-}
-}
-
-@media(max-width: 1400px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -30px;
-		margin-bottom: 200px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 40px;
-}
-}
-
-@media(max-width: 1300px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -60px;
-		margin-bottom: 200px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 0px;
-}
-}
-
-@media(max-width: 1200px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -70px;
-		margin-bottom: 200px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 0px;
-}
-}	
-
-@media(max-width: 1100px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -150px;
-		margin-bottom: 220px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -50px;
-}
-}
-
-@media(max-width: 1000px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -180px;
-		margin-bottom: 200px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -50px;
-}
-}
-
-@media(max-width: 991px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -250px;
-		margin-bottom: 250px;
-	}
-	
-	.fonctoiamogy{
-		position: relative;
-		top: -350px;
-	}
-	
-	.fonctoiamogy2{
-		position: relative;
-		top: -350px;
-	}
-}
-
-@media(max-width: 900px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -250px;
-		margin-bottom: 250px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -90px;
-}
-}
-
-@media(max-width: 800px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -300px;
-		margin-bottom: 250px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -130px;
-}
-}	
-	
-@media(max-width: 700px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -350px;
-		margin-bottom: 250px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -200px;
-}
-}
-
-@media(max-width: 600px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -400px;
-		margin-bottom: 250px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -240px;
-}
-}
-
-@media(max-width: 500px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -450px;
-		margin-bottom: 250px;
-	}
-}
-	
-	
-	
-
-
-
-
-
-
-	
-	
-
-	
-	
-
-
-
-
-
-
-
- /*   </Адаптивность>   */ 
-
-
-
-
-
-
-
-
-
-
-
-  /*   <Адаптивность>   */
-
-
-
-
-@media(max-width : 991px)
-{
-	.PC_Sizes_Header{
-		display:block;
-		position: fixed;
-		top: -500px;
-		opacity: 0;
-	}
-	
-	.Telephone_Sizes_Header{
-	opacity: 1;
-	}
-	
-	.clienture{
-	position: relative;
-	bottom: 420px;
-}
-}
-
-@media(min-width : 992px)
-{
-	.PC_Sizes_Header{
-		opacity: 1;
-	}
-	
-	.Telephone_Sizes_Header{
-		opacity: 0;
-		display:block;
-		position: fixed;
-		top: -500px;
-	}
-}
-
-
-@media(max-width : 1700px)
-{
-		.main{
-	top: 375px;
-	}
-			
-	.main h4{
-	font-size: 20px;
-		}
-	
-	.BackMain{
-	top: 10px;
-}
-	
-	.fonctoiamogy{
-		position: relative;
-	bottom: 20px;
-}
-	
-	.fonctoiamogy2{
-		position: relative;
-	bottom: 20px;
-}
-}
-
-	
-	
-	
-	
-@media(max-width : 1500px)
-{
-		.main{
-	top: 335px;
-	}
-	
-	.BackMain{
-	top: 20px;
-}
-	
-	.fonctoiamogy{
-		position: relative;
-	bottom: 50px;
-}
-	
-	.fonctoiamogy2{
-		position: relative;
-	bottom: 50px;
-}
-	
-	.contactfone{
-		position: relative;
-		bottom: 70px;
-	}
-}
-
-	
-	
-	
-	
-@media(max-width : 1400px)
-{
-	.main h1{
-	font-size: 50px;
-		}
-		.main{
-	top: 275px;
-}
-
-	
-	
-}
-
-@media(max-width : 1399px)
-{
-	.DannoRascet{
-		bottom: 500px;
-	}
-	
-	.DannoNavuki{
-	top: -240px;
-}
-	
-	.DannoNavuki2{
-	margin-top: -620px;
-}
-	
-	
-	.Dannoclienture{
+	.Section-OboMne{
 	margin-top: 200px;
 }
 	
-	
-	
-	
-	
-	.namesoobjenie {
-	float: left;
-	position: relative;
-	left: 95px;
-}
-.Emailsoobjenie {
-	float: left;
-	position: relative;
-	left: 122px;
-	
-}
-.SMSsoobjenie{
-	position: relative;
-	right: 5px;
-	bottom: 20px;
+	.Rascet-border{
+	width: 95%;
 }
 	
-	.soobjenie h3{
-	bottom: 25px;
-		
+	.Pos-Tel-MENU{
+	right: 10px;
 }
-	
-	.soobjenie{
-	top: 60px;
-		
-}
-	
-	.contactfone{
-		bottom: 90px;
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.mesto1{
-	margin-left:150px;
-	
-}
-	
-	.mesto2{
-	margin-left:150px;
-	
-}
-	
-	.fonctoiamogy{
-		position: relative;
-		bottom: 100px;
-	}
-	
-	.fonctoiamogy2{
-		position: relative;
-		bottom: 100px;
-	}
-	.BackMain2{
-	top: 150px;
-}
-	
-	.ctoimma{
-		background-image: url(../img/HowMeMogu.jpg);
-		width: 100%;;
-		height: 300px;
-		display: block;
-		position: relative;
-		z-index: -1;
-		top: -70px;
-		opacity: 0;
-		border: 1px solid rgba(1 , 1 ,1 , 0.1);
-	}
-	
-	.ctoimma2{
-		background-image: url(../img/fonestatistic.jpg);
-		width: 100%;;
-		height: 300px;
-		display: block;
-		position: relative;
-		z-index: -1;
-		top: -70px;
-		opacity: 0;
-		border: 1px solid rgba(1 , 1 ,1 , 0.1);
-	}
-	
-	
-	.DannoCeis{
-	bottom: 300px;
-}
-	
-	
-	
-	.obomne{
-	text-align:center;
-	font-size: 30px;
-	color: #263244;
-	font-weight: 600;
 }
 
-.obomne img{
-	width: 200px;
-	height: 200px;
-}
-
-.imgactive{
-	opacity: 0;
-	transition: all 0.3s;
-}
-
-.info{
-	font-size: 15px;
-	color: #3f495a;
-	font-weight: 400;
-}
-
-.download{
-	border: 1px solid #6d7682;
-	border-radius: 5px; 
-	color: #6d7682;
-	font-size: 13px;
-	background-color: white;
-	transition: all 0.3s;
-	transform: scale(1);
-}
-
-.download:hover{
-	transform: scale(1.1);
-	color:white;
-	background:#6d7682;
-}
-
-.download:hover .imgactive{
-	opacity: 1;
-}
-
-
-.DannoMe{
-	position: relative;
-	top: -180px;
-}
-
-.linkOboMny{
-	position: relative;
-	top: 30px;
-}
+/*575px*//*575px*//*575px*//*575px*//*575px*/
 
 
 
 
 
+/*500px*//*500px*//*500px*//*500px*//*500px*/
 
-
-
-
-
-
-
- /* Фон что я могу с информацией */
-
-.ctoiamogy{
-	font-size: 30px;
-	font-weight: 600;
-}
-	
-	.fonctoiamogy img{
-	height: 30px;
-}
-	
-	.fonctoiamogy2 img{
-	height: 30px;
-}
-
-	.Web_Styling{
-		margin-right: 20px;
-	}
-	
-.Web_Styling p{
-	font-size: 11px;
-	font-weight: 700;
-}
-
-.Web_Styling h4{
-	font-size: 14px;
-	font-weight: 700;
-}
-
-.Working{
-		margin-right: 20px;
-	}
-	
-.Working p{
-	font-size: 11px;
-	font-weight: 700;
-}
-
-	
-.Working h4{
-font-size: 14px;
-	font-weight: 700;
-}
-
-.CEO_Optimization{
-		margin-right: 20px;
-	}
-	
-	
-.CEO_Optimization p{
-	font-size: 11px;
-	font-weight: 700;
-}
-
-.CEO_Optimization h4{
-   font-size: 14px;
-	font-weight: 700;
-}
-
-	.Marketing{
-		margin-right: 20px;
-	}
-	
-.Marketing p{
-	font-size: 11px;
-	font-weight: 700;
-}
-
-.Marketing h4{
-	font-size: 14px;
-	font-weight: 700;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.sitevisitceis{
-	top:-90px;
-}
-	
-	
-	
-}
-
-
-.textceis{
-	margin-bottom: 8px;
-}
-
-
-
-
-@media(max-width : 1200px)
-{
-	.main h1{
-	font-size: 40px;
-}
-	
-	.main{
-	top: 235px;
-}
-	
-	.main h4{
-	font-size: 17px;
-		}
-	
-	.BackMain{
-	top: 60px;
-}
-	
-	
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width : 1199px)
-{
-	
-	.contact{
-		position: relative;
-		top: 50px;
-	}
-	
-	.mesto1{
-	margin-left:50px;
-	
-}
-	
-	.mesto2{
-	margin-left:50px;
-	
-}
-	
-	.fonctoiamogy{
-		position: relative;
-		bottom: 150px;
-	}
-	
-	.fonctoiamogy2{
-		position: relative;
-		bottom: 150px;
-	}
-	
-	.DanText{
-	margin-left: 70px;
-	bottom: 200px;
-}
-	
-	
-	
-	
-	.sitevisitceis{
-	top:-110px;
-}
-	
-	.textceis{
-	margin-bottom: -20px;
-}
-	
-	.DannoCeis{
-	bottom: 270px;
-}
-	
-	
-
-	
-	
-	
-	
-	
-	
-	.namesoobjenie {
-	float: left;
-	position: relative;
-	left: 45px;
-}
-.Emailsoobjenie {
-	float: left;
-	position: relative;
-	left: 22px;
-	
-}
-.SMSsoobjenie{
-	position: relative;
-	right: 5px;
-	bottom: 25px;
-}
-	
-	.soobjenie h3{
-	bottom: 5px;
-		
-}
-	
-	.soobjenie{
-	top: 90px;
-		
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	.namesoobjenie input{
-	padding-left: 10px;
-	width: 300px;
-	height: 30px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-}
-.Emailsoobjenie input{
-	padding-left: 10px;
-	width: 300px;
-	height: 30px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-}
-.SMSsoobjenie input{
-	width: 627px;
-	height: 60px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-	padding-bottom: 30px;
-	padding-left: 10px;
-}
-	
-	
-	
-	.Givesoobjenie input{
-	width: 80px;
-	height: 40px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -20px;
-}
-
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
-	color: black;
-
-}
-	
-
-	
-	.contact h2{
+@media(max-width : 500px){
+	.text-m1{
+	margin-top: 70px;
 	font-size: 20px;
-	font-weight: bold;
-}
-
-.contact h3{
-	font-size: 12px;
 }
 	
-	.DataInfo{
-		right: 80px;
-	top: 60px;
-}
-	
-	.contactfone{
-		top: -130px;
-	}
-
-}
-
-
-
-
-
-
-
-@media(max-width : 1000px)
-{
-	.main h1{
-	font-size:37px;
-}
-	
-	.main{
-	top: 200px;
-}
-	
-	.BackMain{
-	top: 50px;
-}
-	
-	.Web_Styling img{
-	animation-delay: 1s;
-}
-
-.Working img{
-	animation-delay: 2s;
-}
-.CEO_Optimization img{
-	animation-delay: 1s;
-}
-.Marketing img{
-	animation-delay: 2s;
-}
-}
-
-@media(max-width : 991px)
-{
-	
-	.contactfone img{
-	height: 15px;
-}
-	
-	.DataInfo p{
-		font-size: 10px;
-	}
-	
-	.namesoobjenie {
-	float: left;
-	position: relative;
-	left: 80px;
-}
-.Emailsoobjenie {
-	float: left;
-	position: relative;
-	left: 290px;
-	bottom: 21px;
-	
-}
-.SMSsoobjenie{
-	position: relative;
-	right: 5px;
-	bottom: 25px;
-}
-	
-	.soobjenie h3{
-	bottom: 2px;
-	font-size: 15px;
-}
-	
-	.soobjenie{
-	top:40px;
-		
-}
-	
-	.contactfone{
-		top: -120px;
-	}
-	
-	.DannoNavuki2{
-		margin-top: 50px;
-	}
-	
-	.Dannoclienture{
-	margin-top: 350px;
-		margin-bottom: -100px;
-}
-	
-	
-	.namesoobjenie input{
-	padding-left: 10px;
-	width: 200px;
-	height: 20px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-	font-size: 12px;
-}
-.Emailsoobjenie input{
-	padding-left: 10px;
-	width: 200px;
-	height: 20px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-	font-size: 12px;
-}
-.SMSsoobjenie input{
-	width: 410px;
-	height: 60px;
-	background: rgba(255, 255, 255, 0.8);
-	font-weight: bold;
-	padding-bottom: 30px;
-	padding-left: 10px;
-	font-size: 12px;
-}
-	
-	
-	
-	.Givesoobjenie input{
-	width: 70px;
-	height: 30px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -30px;
-		font-size: 12px;
-}
-
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
-	color: black;
-
-}
-	
-	
-	
-	
-	
-	
-	
-
-	
-	.contact h2{
-	font-size: 14px;
-	font-weight: bold;
-}
-
-.contact h3{
-	font-size: 12px;
-}
-	
-	.DataInfo{
-		right: 80px;
-	top: 50px;
-}
-	
-	.contactfone{
-		bottom: 140px;
-	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.main{
-	left: -70px;
-}
-	
-	
-	
-	.fonctoiamogy{
-		position: relative;
-		bottom: 300px;
-	}
-	
-	.fonctoiamogy2{
-		position: relative;
-		bottom: 300px;
-	}
-	
-	
-	.ctoimma{
-		opacity: 1;
-		
-	}
-	
-	.ctoimma2{
-		opacity: 1;
-		
-	}
-	
-	.DannoNavuki{
-	position: relative;
-	top: -50px;
-}
-	
-	
-	.DannoNavuki2{
-	position: relative;
-	top: -300px;
-}
-	
-	
-	.DanText{
-	bottom: 150px;
-}
-	
-	
-	
-	.sitevisitceis{
-	top:-160px;
-}
-	
-	
-	.DannoCeis{
-		bottom: 150px;
-	}
-	
-	
-	
-	.DannoRascet{
-		bottom: 300px;
-	}
-	
-	
-	
-	
-	
-	.DannoMe{
-		top: -100px;
-	}
-	
-	.mesto1{
-		right: -24px;
-	}
-	
-	.mesto2{
-		right: -24px;
-	}
-}
-
-
-@media(max-width : 868px)
-{
-	.fonctoiamogy{
-		bottom: 260px;
-	}
-	
-	.fonctoiamogy2{
-		bottom: 260px;
-	}
-	
-	.mesto1{
-		right: -24px;
-	}
-	
-	.mesto2{
-		right: -24px;
-	}
-}
-
-
-@media(max-width : 820px)
-{
-	
-	.Givesoobjenie input{
-	width: 70px;
-	height: 30px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -80px;
-	left:300px;
-		font-size: 12px;
-}
-
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
-	color: black;
-
-}
-	
-	.DataInfo{
-		left: -160px;
-	}
-	
-	.Emailing{
-		position: relative;
-		left: -210px;
-		top: 70px;
-	}
-	
-	.telephone{
-		position: relative;
-		left: -410px;
-		top: 140px;
-	}
-	
-	.soobjenie{
-		top: -20px;
-	}
-	
-}
-
-
-
-@media(max-width : 800px)
-{
-	.main h1{
-	font-size: 35px;
-}
-	
-	.main{
-	top: 155px;
-}
-	
-	
-	.BackMain{
-	top: 60px;
-}
-	
-	.DannoMe{
-		top: -150px;
-	}
-}
-
-
-@media(max-width : 767px)
-{
-	
-	
-	.mesto1{
-		right:20px;
-	
-}
-	
-	.mesto2{
-		right:20px;
-	
-}
-	
-	.fonctoiamogy{
-		bottom: 260px;
-	}
-	
-	.fonctoiamogy2{
-		bottom: 260px;
-	}
-	
-	
-	
-	.DanText{
-	bottom: 110px;
-}
-	
-	
-	
-	.sitevisitceis{
-	top:-140px;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.Givesoobjenie input{
-	width: 70px;
-	height: 30px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -80px;
-	left:350px;
-		font-size: 12px;
-}
-
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
-	color: black;
-
-}
-	
-	.DataInfo{
-		left: -160px;
-		top: 30px;
-	}
-	
-	.Emailing{
-		position: relative;
-		left: -210px;
-		top: 70px;
-	}
-	
-	.telephone{
-		position: relative;
-		left: -195px;
-		top: 70px;
-	}
-	
-	.soobjenie{
-		top: -50px;
-		right: 60px;
-	}
-	
-	.contact{
-		position: relative;
-		top: 40px;
-	}
-	
-	
-	.fonctoiamogy{
-		position: relative;
-		top: -370px;
-	}
-	
-	.fonctoiamogy2{
-		position: relative;
-		top: -370px;
-	}
-}
-
-
-@media(max-width : 700px)
-{
-	.BackMain{
-	top: 60px;
-}
-	
-	.main{
-	top: 125px;
-}
-	
-	.Givesoobjenie input{
-	width: 50px;
-	height: 20px;
-	border: 1px solid white;
-	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	transition: all 0.3s;
-	transform: scale(1);
-	position: relative;
-	top: -30px;
-	left:0px;
-		font-size: 8px;
-}
-
-.Givesoobjenie input:hover{
-	background: rgb(255, 255, 255);
-	color: black;
-
-}
-	
-	
-	
-	
-	.ctoimma3{
-		background-image: url(../img/fonecontact.jpg);
-		width: 100%;
-		display: block;
-		position: relative;
-		top: -670px;
-		z-index: -2;
-	}
-	
-	.DannoDanno{
-		margin-bottom: 0px;
-	}
-	
-	
-	.DataInfo{
-		left: -50px;
-		top: 220px;
-	}
-	
-	.MyMapping{
-		left: 0px;
-		top: 0px;
-	}
-	
-	.Emailing{
-		left: -70px;
-		top: 0px;
-	}
-	
-	
-	.telephone{
+	.button-m-box{
+		position: absolute;
+		top: 200px;
 		left: 60px;
-		top: -50px;
 	}
-}
-
-
-@media(max-width : 600px)
-{
-	.main{
-	top: 90px;
-		left: -50px; 
+	
+	.Section-OboMne{
+	margin-top: 170px;
 }
 	
-	.contactfone{
-		position: relative;
-	bottom: -200px;
+	.Button-Telephone-Otstup-1{
+		margin-left: -10px;
 	}
-}
-
-
-@media(max-width : 575px)
-{
-	.mesto1{
-		right:0px;
 	
-}
-	
-	.mesto2{
-		right:0px;
-	
-}
-	
-	
-	
-	
-	.fonctoiamogy{
-		padding-bottom:50px ;
-		padding-top:50px ;
-		background-image: url(../img/HowMeMogu.jpg);
-		background-repeat: repeat-y;
+	.button-m-R{
+		margin-top: -40px;
 		
 	}
-	
-	.fonctoiamogy2{
-		padding-bottom:50px ;
-		padding-top:50px ;
-		background-image: url(../img/fonestatistic.jpg);
-		background-repeat: repeat-y;
-		
+.button-m-L{
+		float: none;
+		margin-top: -10px;
 	}
-	
-	
-	.ctoimma{
-		background-image: none;
-	}
-	
-	
-	.BackMain2{
-		opacity: 0;
-	}
-	
 }
 
+/*500px*//*500px*//*500px*//*500px*//*500px*/
 
-@media (max-width : 532px){
-	
-	.nameceis{
-	   top: -40px;
-	}
-	
-	.nameceis h4{
-		top: 0px;
-	}
-	
-	
-	.hus{
-		position: relative;
-		left: 110px;
-		top: 0px;
-	}
-	
+
+
+
+
+/*450px*//*450px*//*450px*//*450px*//*450px*/
+
+@media(max-width : 450px){
+	.text-m1{
+	margin-top: 40px;
+	font-size: 20px;
 }
-
-
-
-
-@media(max-width : 450px)
-{
-	.main{
-		position: relative;
-		right: -250px;
-	}
 	
-}
-
-
-@media(max-width : 449px)
-{
 	
-	.nameceis{
-		position: relative;
-		left: -40px;
-		top: -70px;
-	}
 	
-	.nameceis h4{
-		position: relative;
+	
+	.button-m-box{
+		position: absolute;
+		top: 180px;
 		left: 55px;
 	}
 	
-	.hus{
-		left: 1px;
+	.button-m-box button{
+		white-space:pre;
+		font-size: 8px;
 	}
 	
 	
-}
-
-
-@media(max-width : 400px)
-{
-	.BackMain{
-	top: 60px;
-}
-}
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 1900px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: 150px;
-		margin-bottom: 150px;
+	
+	.button-m-R button{
+		padding: 5px 40px 5px 40px;
 	}
 	
 	
-}
-
-@media(max-width: 1800px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -60px;
-		margin-bottom: 150px;
+	
+	.button-m-L button{
+		padding: 5px 30px 5px 30px;
 	}
 	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 210px;
-}
-}
-
-@media(max-width: 1700px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: 50px;
-		margin-bottom: 150px;
+	.Button-Telephone-Otstup-1{
+		margin-left: -30px;
 	}
 	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 170px;
-}
-}
-
-@media(max-width: 1600px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: 20px;
-		margin-bottom: 150px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 120px;
-}
-}	
-	
-@media(max-width: 1500px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -5px;
-		margin-bottom: 150px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 75px;
-}
-}
-
-@media(max-width: 1400px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -30px;
-		margin-bottom: 200px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 40px;
-}
-}
-
-@media(max-width: 1300px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -60px;
-		margin-bottom: 200px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 0px;
-}
-}
-
-@media(max-width: 1200px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -70px;
-		margin-bottom: 200px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: 0px;
-}
-}	
-
-@media(max-width: 1100px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -150px;
-		margin-bottom: 220px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -50px;
-}
-}
-
-@media(max-width: 1000px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -180px;
-		margin-bottom: 200px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -50px;
-}
-}
-
-@media(max-width: 991px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -250px;
-		margin-bottom: 250px;
-	}
-}
-
-@media(max-width: 900px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -250px;
-		margin-bottom: 250px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -90px;
-}
-}
-
-@media(max-width: 800px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -300px;
-		margin-bottom: 250px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -130px;
-}
-}	
-	
-@media(max-width: 700px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -350px;
-		margin-bottom: 250px;
-	}
-	
-	.contactfone{
-		position: relative;
-		top: -250px;
-	}
-}
-
-@media(max-width: 600px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -400px;
-		margin-bottom: 250px;
-	}
-	
-	.DannoDanno{
-	position: relative;
-	margin-bottom: -240px;
-}
-}
-
-@media(max-width: 500px)
-{
-	.DannoMe{
-		position: static;
-		margin-top: -450px;
-		margin-bottom: 250px;
-	}
-	
-	.main h1{
-	font-size: 20px;
-		}
-	.main h4{
-	font-size: 10px;
-		}
-	
-	.main button{
-		font-size: 10px;
+	.button-m-R{
 		margin-top: -50px;
+		
+	}
+.button-m-L{
+		float: none;
+		margin-top: -20px;
+	}
+}
+
+/*450px*//*450px*//*450px*//*450px*//*450px*/
+
+
+
+
+
+/*400px*//*400px*//*400px*//*400px*//*400px*/
+
+@media(max-width : 400px){
+	.text-m2{
+		margin-left: 10px;
+		}
+	
+	.button-m-box{
+		position: absolute;
+		top: 150px;
+		left: 35px;
 	}
 	
-	.main{
-	position: relative;
-	z-index: 1;
-	top: 130px;
-		left: -20px;
-	float: left;
+	.text-m1{
+		margin-top: 10px;
+		}
+	
+	.Button-Telephone-Otstup-1{
+		margin-left: -50px;
+	}
 }
+
+/*400px*//*400px*//*400px*//*400px*//*400px*/
+
+
+
+
+
+/*Адаптивность*//*Адаптивность*//*Адаптивность*//*Адаптивность*//*Адаптивность*/
+
+
+body{
+ overflow-x: hidden;	
 }
-	
-	
-	
-
-
-
-
- /*   </Адаптивность>   */ 
